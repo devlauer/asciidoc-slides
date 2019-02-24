@@ -1,0 +1,173 @@
+= Docs-as-Code
+Lauer
+2019-01-12
+:revnumber: {project-version}
+:example-caption!:
+:revealjs_theme: white
+ifndef::imagesdir[:imagesdir: images]
+
+== Technische Dokumentation aktuell
+
+[%step]
+* Dokumentation mit Word 
+* Präsentationen mit Powerpoint
+* Ablage Netz, lokal, DMS
+* Integration von Bildern oder Diagrammen über C&P
+
+== Nachteile
+
+* Separat außerhalb der Entwicklerwelt
+[%step]
+** nicht in der Versionsverwaltung (SVN, Git, etc.)
+** getrennte Ablage außerhalb der Sourcecode-Projekte
+** nicht in der IDE editierbar
+
+=== Nachteile Teil 2
+
+* Probleme mit paralleler Bearbeitung wegen Format
+[%step]
+** kein Branching mit anschließendem Merge möglich
+** schwieriger Diff zwischen zwei Dateien 
+*** Versionsverfolgung
+*** paralleler Dateivergleich
+** keine Merge-Tools
+
+
+=== Nachteile Teil 3
+
+* keine Modularisierung möglich
+[%step]
+** erhöht die Versionierungsnachteile  +
+(mehr Personen gleichzeitig an einem Dokument)
+** große Dokumente pro Dokumentenart
+** Links nur bedingt eine Lösung
+** gleichartige Texte werden kopiert und redundant gepflegt
+** oft viele Präsentationen mit ähnlichem Inhalt 
+(unterschiedliche Zielgruppen)
+
+=== Nachteile Teil 4
+
+* technische Darstellungen nur als Bild
+[%step]
+** keine Editierung direkt im Dokument
+** generierte Bilder können nicht automatisch inkludiert werden	
+
+=== Nachteile Teil 5
+
+* Einbettung von Sourcecode schwierig
+[%step]
+** keine passende Formatierung
+** Sourcecode ist immer Kopie 
+*** schnell veraltet
+*** redundant zu pflegen 	
+
+
+=== Nachteile Teil 6
+
+[%step]
+* keine automatische Aktualisierung des Inhaltsverzeichnisses
+* Formatierung 
+[%step]
+** je nach Kenntnisstand unterschiedliche Handhabung
+*** Formatierungsvorlagen manchmal genutzt
+*** oft Kopien mit einem alten Formatierungsstand genutzt
+** große Dokumente verlieren manchmal einzelne Formatierungen
+
+== Alternativen
+
+* Plain-ASCII
+* Markdown
+* Docbook
+* ASCIIDoc
+
+== Alternative Plain-ASCII
+
+* Diff, Branching und Merge über beliebige Versionsverwaltung
+* Diagramme nur als Ascii-Art
+* keine inkludierten Bilder
+* keine Formatierung
+* keine Modularisierung
+* kein Sourcecode-Highlighting
+
+== Alternative Markdown
+
+* einfache Markupsprache
+* einfache Formatierung 
+* entwickelt für Konvertierung nach HTML
+* unterstützt von Seiten wie github, reddit, osm
+* standardisiert, aber unterschiedliche Varianten 
+
+=== Alternative Markdown
+
+* Diff, Branching und Merge über beliebige Versionsverwaltung
+* Modularisierung nicht standardisiert (eigene Tools)
+* Sourcecode-Highlighting
+* Referenzierung von Bildern
+* keine Diagramme
+
+== Alternative ASCIIDoc
+
+* Ersatz für das Docbook XML-Format
+* gut lesbare Markupsprache
+* gedacht für unterschiedliche Zielformate
+** PDF-Dokumente
+** E-Books (epub, bspw. einige Bücher von O'Reilly)
+** Präsentationen (reveal.js)
+** Man Pages ...
+
+=== Alternative ASCIIDoc
+
+* Asciidoctor als Tool für die Konvertierung
+** Asciidoctor für Ruby, 
+** AsciidoctorJ für Java (JRuby) 
+** Asciidoctor.js (über Opal) für Javascript, Node.js
+** Erweiterbar über Extension-Mechanismus
+ 
+=== Alternative ASCIIDoc
+ 
+* Diff, Branching und Merge über beliebige Versionsverwaltung
+* div. Formatierungsoptionen
+* Modularisierung über include-Befehl
+* verschiedene Sourcecode-Highlightings
+
+=== Alternative ASCIIDoc
+
+* Inkludierung/Referenzierung von Bildern, Sourcecode, ...
+* Diagramme über PlantUML, Ditaa, GraphViz, Umlet, ...
+* Variablen 
+* automatisches Inhaltsverzeichnis   
+
+== Editoren
+
+[%step]
+* Notepad ;-)
+** ohne Vorschau
+** simple Textdarstellung
+* Atom
+** Syntax-Highlighting
+** Live-Preview (kein PlantUML)
+** separate PlantUML Erstellung möglich
+
+=== Editoren 
+
+[%step]
+* Asciidoc FX
+** Syntax-Highlighting
+** Live-Preview inkl. PlantUML
+* Eclipse (mit Plugin)
+** Syntax-Highlighting
+** Live-Preview inkl. PlantUML
+** direkte Integration mit Build/Versionstools
+
+== Build
+
+* direkte Buildintegration
+* Gradle-Plugin
+* Maven-Plugin
+** Dokumente
+** Maven-Site
+** Javadoc
+
+== Demo
+
+
