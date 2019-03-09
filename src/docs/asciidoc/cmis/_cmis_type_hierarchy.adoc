@@ -1,0 +1,47 @@
+[plantuml, cmis_type_hierarchy,png]
+----
+@startuml
+
+class ObjectType {
+id
+localName
+localNamespace
+displayName
+queryName
+parentId
+description
+isQueryable
+baseId
+...
+}
+class DocumentType{
+}
+class FolderType {
+}
+class PropertyDefinition {
+id
+localName
+localNamespace
+displayName
+queryName
+propertyType
+required
+defaultValue
+...
+}
+class RelationshipType {
+}
+class PolicyType {
+}
+class SecondaryType{
+}
+
+ObjectType *-r- PropertyDefinition
+DocumentType -u-|> ObjectType
+FolderType -u-|> ObjectType
+RelationshipType -u-|> ObjectType
+PolicyType -u-|> ObjectType
+SecondaryType -u-|> ObjectType
+ 
+@enduml
+----

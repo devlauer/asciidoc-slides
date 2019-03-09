@@ -1,0 +1,29 @@
+[plantuml, cmis_general, png]
+----
+@startuml
+node Client{
+	node Consumer #99FF99
+} 
+
+
+node Provider{
+	node Services #99FF99[
+		Services 
+		----
+		Domain Model
+	] 
+	node "Vendor Mapping" as vendor
+	node Repository as repo
+}
+
+Consumer -d-> Services : write
+Services -u-> Consumer : read
+Services -d-> vendor
+vendor -d-> repo
+
+legend
+|<back:#99FF99>   </back>| CMIS |
+endlegend
+
+@enduml
+----

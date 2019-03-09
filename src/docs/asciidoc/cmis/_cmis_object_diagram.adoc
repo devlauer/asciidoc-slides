@@ -1,0 +1,22 @@
+[plantuml, cmis_object_diagram,png]
+----
+@startuml
+
+object Object
+object Document
+object Folder
+object Property
+object Type
+object SecondaryType
+
+Object <|-d- Document
+Object <|-d- Folder
+Object *-r- Property
+Object -- Type
+Object *-l- SecondaryType
+Type -[hidden]d- SecondaryType
+Document -[hidden]l- Type
+Document -[hidden]l- Folder
+
+@enduml
+----

@@ -1,0 +1,116 @@
+= CMIS
+Lauer
+2019-01-12
+:revnumber: {project-version}
+:example-caption!:
+:revealjs_theme: white
+ifndef::imagesdir[:imagesdir: images]
+
+== Agenda
+
+* 
+
+== Allgemein
+
+* CMIS - [underline]#C# ontent [underline]#M# anagement [underline]#I# nteroperability [underline]#S# ervices
+* OASIS Standard
+* gestartet von IBM, EMC, Microsoft
+* aktuell Version 1.1
+
+== Allgemein
+
+Hersteller:
+
+* Alfresco
+* Day/Adobe
+* EMC
+* IBM Filenet Content Manager
+* Sharepoint
+* OpenText ECM
+* Nuxeo
+
+== Allgemein
+
+image::cmis_general.png[]
+
+== Bestandteile
+
+* Domain Model
+** Datenmodell (Typen, Objekte)
+** Query-Language - CMIS QL
+** Services (Operationen auf dem Datenmodell
+* Bindings
+** AtomPub Binding
+** WebService Binding (SOAP)
+** Browser Binding (JSON)
+
+== Datenmodell
+
+* Basisdatentypen
+** Folder/Verzeichnis
+** Document/Dokument
+** Relationship
+** Policy 
+** Secondary Type/sekundärer Datentyp
+
+Im Detail beschrieben über Typdefinition
+
+== Datenmodell
+
+image::cmis_type_hierarchy.png[]
+
+
+== Datenmodell
+
+image::cmis_object_diagram.png[]
+
+== CMIS-QL
+
+* Suche nach Dokumenten und Verzeichnissen
+* Ähnlich Select-Statement in SQL
+** Select, From Clauses
+** Where Clause
+** Order By Clause
+* Jeder Typ wird wie eine Tabelle in SQL behandelt 
+
+== CMIS-QL
+* zusätzliche Funktionen
+** contains()
+** in_folder()
+** in_tree()
+
+== Services - Browse
+
+* Repository
+** getTypedefinitions
+** getRepositoryInfo
+* Navigation
+** getChildren
+** getParent
+* Discovery
+** query
+
+== Services - Inspect
+
+* Object
+** getContent
+** getProperties
+
+== Services - Act
+
+* Object
+** createFolder
+** createDocument
+** move
+** delete
+** updateProperties
+
+== Bindings
+
+* sprachneutral (beliebige Clients)
+* verschiedene Protokolle
+* unterschiedliche Einsatzszenarien
+
+== CMIS - Links
+
+https://www.alfresco.com/sites/www.alfresco.com/files//cmis-cheatsheet.pdf
