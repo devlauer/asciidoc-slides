@@ -3,3 +3,4 @@
 /.project
 /.settings/
 /asciidoc-slides.iml
+.vscode/settings.json
