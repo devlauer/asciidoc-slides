@@ -4,6 +4,7 @@ Lauer
 :revnumber: {project-version}
 :example-caption!:
 :revealjs_theme: white
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js
 ifndef::imagesdir[:imagesdir: images]
 
 == Technische Dokumentation aktuell
