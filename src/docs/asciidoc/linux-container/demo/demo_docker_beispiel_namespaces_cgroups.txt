@@ -1,0 +1,9 @@
+docker run --name demo --cpu-shares 256 -d --rm busybox sleep 600
+# im hintergrund ausführen, damit man diesen untersuchen kann
+docker exec demo ls /sys/fs/cgroup/cpu
+docker exec demo cat  /sys/fs/cgroup/cpu/cpu.shares
+# keine Unterverzeichnisse und unter cpu.shares steht die 256
+# docker organisiert die cgroups in einem eigenen docker verzeichnis, in dem die ids der container wiederum eigene Verzeichnisse bilden
+ls /sys/fs/cgroup/cpu/docker/<containerid>/cpu.shares
+# man sieht die 256, nur nicht im root cpu cgroup
+

@@ -1,0 +1,30 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Building Block - Namespaces
+
+[%step]
+* Isolationlayer regelt Sichtbarkeit von Kernel-Ressourcen
+* Partitionierung über Kernel Strukturen
+* unterschiedliche Typen von NS
+* ein oder mehrere Prozesse können in einem NS sein
+* alle Prozesse sind in einem NS eines Typs
+* keine Namen je NS, sondern INodes
+
+[.notes]
+--
+* Partitionierung von Kernel Strukturen
+** task_struct Datenstruktur für jeden Prozess im Kernel
+*** Referenz auf ns_proxy Datenstruktur
+*** ns_proxy zeigt auf 6 verschiedene Namespaces (uts, ipc, mnt, pid, net, cgroup)
+*** ns_proxy zeigt wiederum auf eigene Datenstrukturen für die Namespaces
+* Sichtbarkeit
+** Eigene Systemsicht der Prozesse im gleichen Namespace
+** Änderungen an Ressourcen in Namespaces können außerhalb unsichtbar sein
+* was man nicht ändern kann, kann man nicht beeinflussen
+* Qualität der Isolation durch Sichtbarkeit Regulierung
+--
+
+include::_0420_namespace_types.adoc[]
+
+include::_0440_namespace_control.adoc[]
+
+include::_0460_namespace_demo.adoc[]

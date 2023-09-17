@@ -1,0 +1,128 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== CGroups - Subsysteme
+
+[%step]
+* Memory
+* CPU (time,)
+* Block I/O
+* Devices (bspw. USB)
+* Network (net_cls / net_prio )
+* Freezer (resume, gleichzeitig alle in sleep or resume)
+* Anzahl der Prozesse (pids)
+* ...
+
+=== Memory CGroup
+
+* Limitierung
+** Hauptspeicherverbrauch, Swap Verbrauch
+** Soft Limits und Hard Limits möglich
+* Accounting
+* Isolation
+** Speicher reservieren über Hard Limit
+
+=== Memory CGroup: Accounting
+
+* wie viel Speicher wird durch einen Knoten verwendet
+* Größeneinheit Page (meist 4KB)
+* viele Differenzierungen (Cache, RSS, Active, Inactive etc.)
+* alle Pages werden überwacht
+* jede Page gehört einem Knoten in der Hierarchie
+* Pages können über Gruppen geshared werden
+
+[.notes]
+--
+* gesharte Pages gehören dem ersten Nutzer bis dieser die Page freigibt
+* weitere Differenzierungen
+** File-Backed Pages (read/write/mmap block devices)
+** Anonymous Pages (stack, heap, anonymous mmap)
+--
+
+=== Memory CGroup: Limits
+* jeder Knoten kann eigene Limits haben
+* Limits sind optional
+* Soft Limits werden nicht erzwungen
+** relevant für Reclaiming bei Überlast
+** je höher über Soft Limit, desto wahrscheinlicher gekillt
+* Hard Limits triggern einen Knoten spezifischen OOM-Killer
+** wenn der Prozess über die Schwelle geht wird er gekillt
+* verschiedene Typen wie physical memory, kernel memory, total memory
+
+[.notes]
+--
+* der OOM-Killer lässt sich über einen OOM-Notifier umgehen
+* wenn Limit erreicht
+** Freeze der Gruppe
+** Kill Prozesse, Erhöhung Limit, Migration des Containers
+** Unfreeze der Gruppe
+--
+
+=== CPU CGroup
+* Limitierung
+** über relative Gewichte (cpu.shares)
+* Accounting
+** cpustat.usage  User/System
+** Nutzung pro CPU
+* Isolation
+** cpuset.cpus
+** pinne eine spezifische CPU für einen Knoten
+** reserviere CPUs für spezifische Anwendungen
+
+[.notes]
+--
+* Throttling nicht direkt möglich, aber nicht so relevant, da Context-Switching << 1/HZ
+* anhand von Instruktionen, Clock Speed etc. nicht wirklich definierbar
+--
+
+=== Block I/O CGroup
+* Limitierung und Isolation
+** blkio.throttle.{read,write}.{iops,bps}.device
+** pro Block Device möglich
+* relative Gewichtung/Priorisierung
+* Accounting
+** Anzahl von IOs, Bytes, Service Time
+** pro Block Device möglich
+
+[.notes]
+--
+* keine perfekte Limitierung von I/O möglich
+* seit 3.8 Kernel auch Accounting von async I/O
+* die meisten Writes gehen über Page Cache, so dass man
+meint das Throttling nicht funktioniert
+--
+
+=== Devices CGroup
+* kontrolliert Read/Write/mknod Berechtigungen auf Device
+* typisch
+** allow: /dev/{tty,zero,random,null}...
+** deny: anything else
+** vielleicht:
+*** /dev/net/tun (network interface manipulation)
+*** /dev/fuse (filesystem in userspace)
+*** /dev/kvm (VMs in containers, yay inception!)
+*** /dev/dri (GPU)
+
+=== Network CGroup (net_cls and net_prio)
+* automatisch Traffic Klasse oder Priorität setzen
+* funktioniert nur für ausgehenden Traffic
+* net_cls weist Traffic einer Klasse zu
+* net_prio weist Traffic eine Priorität zu
+
+[.notes]
+--
+* wenn net_cls Klasse nicht mit tc/iptables matcht, normaler Trafficflow
+* der Kernel markiert den Traffic der CGroup, danach kann dieser limitiert werden
+--
+
+=== Freezer CGroup
+* erlaubt einen Knoten zu freeze/thaw
+* ähnliche Funktionalität zu SIGSTOP/SIGCONT
+** kann aber nicht durch Prozesse festgestellt werden
+* erschwert nicht ptrace/debugging
+* spezifische Use Cases
+** Cluster Batch Scheduling
+** Migration Prozess oder Container
+
+=== PIDs CGroup
+
+* limitiert die Anzahl der Prozesse in einem Knoten
+* verhindert zusätzlich gestartete Prozesse

@@ -1,0 +1,6 @@
+# Folgende Verzeichnisse:
+/images/ubuntu-rootfs
+/containers/guest/rootfs
+/containers/guest/rw
+mount -t aufs -o br=/containers/quest/rw=rw:/images/ubuntu-rootfs=ro none /containers/quest/rootfs
+#Nun kann in RootFS schreiben, die Änderungen gehen aber in das rw Verzeichnis

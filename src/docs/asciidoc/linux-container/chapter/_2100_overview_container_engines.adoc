@@ -1,0 +1,44 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Container Engines
+
+* LXC - Linux Containers
+* LXD (LXC Extension)
+* systemd-nspawn
+* Docker
+* Podman
+
+=== LXC
+* Sammlung von Userland Tools zur Erstellung von Containern
+* Ein Container wird als Verzeichnis unter /var/lib/lxc angelegt
+* Kleine Config-Datei und Container mit Root FS
+* soll einfach für Admins sein, ist aber auch schwerer für Entwickler
+
+=== LXD
+* REST API
+* nutzt LXC als Runtime
+* Verwaltung von LXD-Images
+* Integration in OpenStack
+
+=== systemd-nspawn
+
+* im System-D Umfeld gedacht für
+** "for debugging, testind and building"
+** "similar to chroot, but more powerful"
+** "implements the container interface"
+* unterstützt OCI Images
+
+=== Docker Engine
+* ein Daemon der über eine REST API kontrolliert wird
+* nutzt containerd als Highlevel-Runtime
+* nutzt runc als Lowlevel-Runtime (änderbar)
+* umfänglichste Container Engine
+* verwaltet Container, Images, Builds and more
+
+=== Podman
+* nutzt Crun als Lowlevel-Runtime (änderbar)
+* Skopeo für Images
+* Buildah für Build
+
+include::./_2120_overview_container_runtime_interfaces.adoc[]
+
+include::./_2140_overview_container_runtime.adoc[]

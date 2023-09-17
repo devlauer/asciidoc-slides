@@ -1,0 +1,27 @@
+ls /sys/fs/cgroup
+# zeigt alle verfügbaren cgroups die enabled sind
+ls /sys/fs/cgroup/devices
+# zeigt wie das subsystem konfiguriert ist
+ls /proc
+# im /proc filesystem findet man ein Verzeichnis für jede Prozessid
+echo $$
+# ermittelt die eigene id
+cat /proc/<pid>/cgroup
+# zeigt alle cgroups, in der ein prozess drin ist
+sudo mkdir /sys/fs/cgroup/pids/lfnw
+ls /sys/fs/cgroup/pids/lfnw
+# man sieht automatisch alle virtuellen Dateien, die angelegt wurden
+cat /sys/fs/cgroup/pids/lfnw/tasks
+# ist zunächst leer
+echo $$ | sudo tee /sys/fs/cgroup/pids/lfnw/tasks
+cat /proc/<pid>/cgroup
+# zeigt, dass der Prozess nun in der cgroup /lfnw ist
+cat /sys/fs/cgroup/pids/lfnw/tasks
+# zeigt zwei prozesse, die bash und cat, da cat die cgroup seines parents erbt
+$(cat /sys/fs/cgroup/pids/lfnw/tasks 1>&2)
+# damit werden zwei prozesse aufgemacht
+cat /sys/fs/cgroup/pids/lfnw/pids.max
+# zeigt max, damit gibt es kein limit
+echo 2 | sudo tee /sys/fs/cgroup/pids/lfnw/pids.max
+$(cat /sys/fs/cgroup/pids/lfnw/tasks 1>&2)
+# scheitert, da mehr prozessids aufgemacht werden müssen, als erlaubt sind

@@ -1,0 +1,36 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Kubernetes
+
+[%step]
+* Container-Orchestrierung
+* Steuerung über API/CLI
+* Verwaltung über mehrere Hosts hinweg
+* aufgeteilt in Control Planes und Worker Nodes
+* über Plugins, APIs erweiterbar
+* unterstützt RBAC
+* von Google als Neuentwicklung von Borg geschaffen
+
+[.notes]
+--
+* Orchestrierung = Verwaltung der technischen Container Infrastruktur
+* Verfügbarkeit, Lastverteilung, Erreichbarkeit von Services
+--
+
+=== Übersicht Kubernetes
+:figure-caption!:
+
+.Siehe https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png
+image::https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png[]
+
+[.columns]
+=== Pod - Namespaces/CGroups
+
+[.column.is-one-third%step]
+--
+image::container_namespaces_cgroup.svg[]
+--
+
+[.column.is-two-thirds%step]
+--
+image::pod_container_namespaces_cgroups.svg[]
+--

@@ -1,0 +1,53 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+
+[.columns]
+== Docker Engine
+
+[.column%step]
+--
+image::Docker_lxc.svg[]
+--
+
+[.notes]
+--
+* Docker startete mit Kernel 3.8 hatte nicht alle Container Securityfeatures
+* theoretisch ließen sich auch einzelne Threads (in Linux analog Prozessen) in
+separate Container auslagern (bspw. bei Apache)
+* am Anfang LXC als Container Runtime
+* eigene Container Runtime als Teil des Daemon
+* Auslagerung Container Runtime als libcontainer
+* Google-Entwickler ergänzen Features aus lmctfy
+* mit Standardisierung durch OCI wird libcontainer Teil von runC und diese die Default Container-Runtime
+* High-Level Wrapper Containerd für runC, Nutzung durch Kubernetes über shim
+--
+
+
+[.columns]
+=== Docker Engine
+
+[.column]
+--
+image::Docker_libcontainer.svg[]
+--
+
+[.notes]
+--
+* mit Standardisierung durch OCI wird libcontainer Teil von runC und diese die Default Container-Runtime
+--
+
+
+[.columns]
+=== Docker Engine
+
+[.column]
+--
+image::Docker_containerd_runc.svg[]
+--
+
+[.notes]
+--
+* High-Level Wrapper Containerd für runC, Nutzung durch Kubernetes über shim
+--
+
+

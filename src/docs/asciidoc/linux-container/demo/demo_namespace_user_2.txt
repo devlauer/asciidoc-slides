@@ -1,0 +1,9 @@
+# -Ur -> Usernamespace mit Root-Mappings -u -> UTS-Namespace Start bash
+unshare -Ur -u bash
+# folgendes in initialen und neuen ausführen
+readlink /proc/$$/ns/user
+readlink /proc/$$/ns/uts
+readlink /proc/$$/ns/net
+# alle Usernamespaces finden
+#sudo find /proc -maxdepth 3 -type l -name user -exec readlink {} \; 2>/dev/null | sort -u
+# oder lsns -t user

@@ -1,0 +1,19 @@
+echo $$ # zeigt die aktuelle PID
+ls -l /sys/fs/cgroup # zeigt die aktuellen CGroups
+# innerhalb jeder cgroup sieht man die controlgroups dieser cgroup
+# freezer ist die kleinste cgroup
+cd /sys/fs/cgroup/freezer
+cat tasks # zeigt alle PIDs des Systems, da es keine separaten Cgroups gibt
+# cgroups werden über Verzeichnisse und Dateien gesteuert
+mkdir test # legt eine neue CGroup an
+cd test
+ls
+cat tasks # ist komplett leer, noch keine Prozesse drin
+cat freezer.state # ist kontrollierbar in der CGroup
+# pid in einer separaten Shell ermitteln über echo $$ und dann
+echo <PID> > tasks
+cat tasks # Zeigt die PID der Shell
+echo FROZEN > freezer.state # friert die Shell ein
+ps -auxw | grep <PID> # Zeigt den Prozess eigentlich noch als laufend,
+# Dann in die Shell gehen und zeigen, dass man nichts mehr machen kann
+# dieser ist aber eingefroren, über ps kann man das also nicht direkt sehen

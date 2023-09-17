@@ -1,0 +1,82 @@
+ifndef::imagesdir[:imagesdir: ../images]
+[.columns]
+== Hypervisor vs Container
+
+[.column%step]
+--
+image::VM.svg[]
+--
+
+[.column%step]
+--
+image::Container.svg[]
+--
+
+[.notes]
+--
+* Hypervisor basiert auf der Emulation von Hardware
+** neues OS und Programme on Top auf der Hardwar
+** mehrere Kernel
+** beliebige OS möglich
+
+* Container sind die Virtualisierung von OS Subsystemen
+** nur ein Kernel
+** it feels like a 'vm' - own process space, own network interface, can run stuff as root, can install packages, can run services,  can mess up routing, iptables ...
+** in Linux möglich durch sehr stabile Kernel API
+** nur OS kompatibel zur Kernel API möglich - damit nur Linux auf Linux
+** aufgrund der Stabilität der Kernel APIs weitestgehend unabhängig von der Kernel Version
+** unabhängig von der Distribution
+** container und Hostarchitektur müssen aber passen
+** keine eigenen Module
+** init / syslog, cron sind optional
+** kann ein normaler isolierter Prozess auf der Host Maschine sein
+--
+
+=== Vorteile
+
+[%step]
+* Kernel-Update für alle Subsysteme
+* Elastizität/Skalierung
+** Ressourcenverwaltung/-limitation
+** Geschwindigkeit
+* Isolation
+* run everywhere/anything
+
+[.notes]
+--
+* Elastizität/Skalierung
+** Memory
+*** ein Kernel verwaltet die Memory Pages -> schneller (Mikro-/Nanosekunden statt Sekunden)
+*** verschieben über CGroups
+*** bei VM kämpfen technisch unterschiedliche Kernel gegeneinander (Memory Ballooning, um Speicher an Guest abzugeben)
+*** bei VM sieht nur memory pages, nicht welche wie verwendet werden, wenn überlastet, mit hoher Wahrscheinlichkeit die falsche herausgenommen, bei einem Kernel besser
+** Virtuozzo/Parallels konnte auf gleicher Hardware bis zu dreimal mehr Virtual Environments (Container) erstellen als VMs
+** Footprint (es lassen sich in der Regel 10x mehr App-Container als Vms auf gleicher Hardware betreiben)
+** niedrigere Limits für Programme als durch die Maschine gegeben
+** Images können kleiner sein als bei VMs
+* Isolation
+** Prozesse sehen sich gegenseitig nicht und auch nicht deren Ressourcen
+** Container haben ihr eigenes Netzwerkinterface, ihr eigener Speicher/CPU, Isolation untereinander, eigenes Dateisystem
+* run everywhere/anything
+** alles was auf einem Linux-Kernel läuft, läuft auch im Container
+--
+
+
+=== Use Cases
+
+[%step]
+* Continuous Integration / Continuous Deployment
+* Konsistente Umgebungen
+* Dependency Hölle auf OS-Ebene verlassen
+* Anzahl VMs reduzieren
+* Günstigeres/effektiveres Hosting
+* Schnelle Skalierung
+* Einfachere Integrationstests
+
+[.notes]
+--
+* Konsistente Umgebungen
+** gleiche Umgebung von lokal bis Prod
+** Isolation von Infrastruktur und Umgebungen
+** Portabilität
+--

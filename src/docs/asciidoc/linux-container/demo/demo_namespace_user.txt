@@ -1,0 +1,15 @@
+uname -a # System anzeigen
+ls /proc/self/ns # Alle Namespaces im System
+ls -l /proc/self/ns #alle angezeigten Nummern sind Inodes im System
+id # die eigene UserId
+unshare -r U # Unshare für User Namespace, um Root in einem separaten Namespace zu sein
+id # root im neuen Namespace
+ls -l /proc/self/ns # man sieht, dass die Namespaces gleich sind, aber der Usernamepsace ist unterschiedlich
+ps # zeigt alle Prozesse des Systems, da der PID Namespace noch nicht gewechselt ist, sonder noch der allgemeine
+ls -l /etc/shadow # zeigt, dass der im Usernamespace angezeigte Rootuser auf das Verzeichnis keine Rechte hat, auch nicht dadurch, dass er Root ist,
+cat /etc/shadow # zeigt, dass Root im Usernamespace nicht Root im System ist. Hintergrund ist die Tatsache, das die UID und GID im Hintergrund im Kernel remapped wird
+cat /proc/self/uid_map # Zeigt dieses Mapping der erste Wert ist die UID
+# im Namespace, also in diesem Beispiel Root, die zweite ist die UID im Orginalsystem, also 1000 und
+* die dritte Zahl ist die Range, es wird hier nur eine UID gemappt, also 1
+* als richtiger Root könnte man auch hier weitere Mappings anlegen, etwa
+* über echo 2 1001 2 > /proc/self/uid_map

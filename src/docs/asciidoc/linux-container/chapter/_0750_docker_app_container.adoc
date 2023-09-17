@@ -1,0 +1,13 @@
+ifndef::imagesdir[:imagesdir: ../images]
+[.columns]
+== Docker - App Container
+
+[.column%step]
+--
+image::OSContainer.svg[]
+--
+
+[.column%step]
+--
+image::AppContainer.svg[]
+--

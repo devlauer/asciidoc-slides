@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="347.58548mm"
+   height="191.60489mm"
+   viewBox="0 0 347.58547 191.60489"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="container_and_image_layer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64693624"
+     inkscape:cx="1041.8337"
+     inkscape:cy="445.17525"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(29.630063,-49.046014)">
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.840709;stroke-dasharray:none"
+       id="rect460"
+       width="233.2021"
+       height="109.71718"
+       x="-3.9608312"
+       y="130.51337" />
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.499205;stroke-dasharray:none"
+       id="rect460-3"
+       width="233.54359"
+       height="38.6283"
+       x="-4.1315742"
+       y="68.166374" />
+    <rect
+       style="fill:#e9ddaf;stroke:#ffffff;stroke-width:0.441021"
+       id="rect111"
+       width="223.22467"
+       height="18.043062"
+       x="0.5217998"
+       y="215.24673" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="7.2297931"
+       y="227.01993"
+       id="text167"><tspan
+         sodipodi:role="line"
+         id="tspan165"
+         style="stroke-width:0.264583"
+         x="7.2297931"
+         y="227.01993">Layer 1: FROM ubuntu:22-04</tspan></text>
+    <rect
+       style="fill:#e9ddaf;stroke:#ffffff;stroke-width:0.441303"
+       id="rect111-9"
+       width="223.51358"
+       height="18.04278"
+       x="0.52194071"
+       y="192.83452" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="7.2297931"
+       y="204.60756"
+       id="text167-7"><tspan
+         sodipodi:role="line"
+         id="tspan5564">Layer 2: RUN apt-get install apache</tspan></text>
+    <rect
+       style="fill:#e9ddaf;stroke:#ffffff;stroke-width:0.441444"
+       id="rect111-3"
+       width="223.65804"
+       height="18.042641"
+       x="0.52201116"
+       y="171.14519" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="7.2297931"
+       y="182.94463"
+       id="text167-8"><tspan
+         sodipodi:role="line"
+         id="tspan165-6"
+         style="stroke-width:0.264583"
+         x="7.2297931"
+         y="182.94463">Layer 3: ADD html /www-data/ </tspan></text>
+    <rect
+       style="fill:#e9ddaf;stroke:#ffffff;stroke-width:0.441726"
+       id="rect111-33"
+       width="223.94695"
+       height="18.042358"
+       x="0.52215195"
+       y="149.45595" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="7.2297931"
+       y="161.22879"
+       id="text167-5"><tspan
+         sodipodi:role="line"
+         id="tspan5562">(Layer): ENTRYPOINT [&quot;/usr/sbin/apache2&quot;]</tspan></text>
+    <rect
+       style="fill:#e9ddaf;stroke:#ffffff;stroke-width:0.441303"
+       id="rect111-4"
+       width="223.51358"
+       height="18.04278"
+       x="0.52194071"
+       y="85.433372" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="7.229795"
+       y="97.491318"
+       id="text167-9"><tspan
+         sodipodi:role="line"
+         id="tspan5603">Layer 4: Container Layer</tspan></text>
+    <rect
+       style="fill:#80e5ff;stroke:#ffffff;stroke-width:0.288511"
+       id="rect422"
+       width="124.32897"
+       height="12.122545"
+       x="-29.485807"
+       y="49.190269" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-25.254295"
+       y="58.003201"
+       id="text426"><tspan
+         sodipodi:role="line"
+         id="tspan424"
+         style="stroke-width:0.264583"
+         x="-25.254295"
+         y="58.003201">docker run apache</tspan></text>
+    <rect
+       style="fill:#80e5ff;stroke:#ffffff;stroke-width:0.288511"
+       id="rect422-2"
+       width="124.32897"
+       height="12.122545"
+       x="-29.485807"
+       y="112.91946" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-25.254295"
+       y="121.73238"
+       id="text426-3"><tspan
+         sodipodi:role="line"
+         id="tspan424-7"
+         style="stroke-width:0.264583"
+         x="-25.254295"
+         y="121.73238">docker build -t apache .</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="243.06796"
+       y="187.8802"
+       id="text1297"><tspan
+         sodipodi:role="line"
+         id="tspan1295"
+         style="fill:#ffffff;stroke-width:0.264583"
+         x="243.06796"
+         y="187.8802">Image Layers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="239.1416"
+       y="90.110474"
+       id="text1297-6"><tspan
+         sodipodi:role="line"
+         id="tspan1295-6"
+         style="fill:#ffffff;stroke-width:0.264583"
+         x="239.1416"
+         y="90.110474">Container Layer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="52.435154"
+       y="141.99318"
+       id="text1328"><tspan
+         sodipodi:role="line"
+         id="tspan1326"
+         style="fill:#ff00ff;stroke-width:0.264583"
+         x="52.435154"
+         y="141.99318">Read only</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="49.493114"
+       y="78.809105"
+       id="text1328-8"><tspan
+         sodipodi:role="line"
+         style="fill:#ff00ff;stroke-width:0.264583"
+         x="49.493114"
+         y="78.809105"
+         id="tspan2109">Read Write</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="67.381691"
+       y="79.238556"
+       id="text2107"><tspan
+         sodipodi:role="line"
+         id="tspan2105"
+         style="stroke-width:0.264583"
+         x="67.381691"
+         y="79.238556" /></text>
+  </g>
+</svg>

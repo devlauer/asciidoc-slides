@@ -1,0 +1,17 @@
+sudo unshare -fp /bin/bash # neuer Child-PID-Namespace
+sleep 90000 &
+ps -ef # alle Prozesse da warum ?
+sudo unshare -fp /bin/bash
+sleep 80000 &
+ps -ef # alle Prozesse auch hier da, warum? -> ps geht auf /proc, damit Mount und nicht Namespace PID-Tree
+kill -9
+
+# mount proc selbst anpassen
+sudo unshare -pmf # PID, Mount Namespace mit Fork
+mount -t proc proc /proc
+ps -ef # nun sieht man nur den aktuellen PID-Tree
+
+# andere Session
+lsns |grep bash
+sudo cat /proc/<pid>/status |grep NSpid
+sudo nsenter -t <pid> -a

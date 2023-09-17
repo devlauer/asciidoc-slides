@@ -1,0 +1,19 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Historie Linux Container (2)
+
+[%step]
+* 2002 Linux Mount Namespace
+* 2004 CPUSets (Kernel 2.6.12)
+* 2005 Open Source Version: OpenVZ
+* 2006 Process Containers (CGroups)
+
+[.notes]
+--
+* CPUSets ermöglichten es CPUs und Memory Nodes zu einer Gruppe von Tasks zuzuordnen
+* Process Containers
+** wurden später in CGroups umbenannt
+** von OpenVZ mit gepatchtem Kernel inspiriert
+** von Google unterstützt durch Paul Menage und Rohit Seth
+* Zusammenfassung von Prozessen im Linux Kernel für Ressourcenverwaltung
+* in 2007 umbenannt in Control Groups und in den Kernel 2.6.24 gemerged
+--

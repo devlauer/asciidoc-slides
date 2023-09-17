@@ -1,0 +1,53 @@
+mkdir -p /tmp/images/alpine /tmp/containers/alpine-container /tmp/containers/alpine-cow /tmp/containers/alpine-work
+docker export $(docker run -d alpine true) | tar -C /tmp/images/alpine/ -xf-
+touch /tmp/images/alpine/TESTFILE
+ls /tmp/images/alpine
+sudo su
+chown -R root:root /tmp/images/
+chown -R root:root /tmp/containers/
+mount -t overlay -o lowerdir=/tmp/images/alpine,upperdir=/tmp/containers/alpine-cow,workdir=/tmp/containers/alpine-work none /tmp/containers/alpine-container
+
+unshare --mount --uts --ipc --net --pid --fork bash
+hostname alpine-container
+exec bash
+ps
+mount -t proc none /proc
+ps
+umount /proc/
+cd /tmp
+mount --bind /tmp/containers/alpine-container/ /tmp/containers/alpine-container/
+mkdir /container
+#mount --make-rprivate /
+mount --move /tmp/containers/alpine-container/ /container/
+cd /container/
+ls
+mkdir oldroot
+pivot_root . oldroot/
+cd /
+ls
+mount -t proc none /proc
+mount
+umount -a
+umount -l /oldroot/
+ping www.google.de
+
+# WECHSEL neue Session
+
+sudo su
+pidof unshare
+CPID=<pid>
+ip link add name h$CPID type veth peer name c$CPID
+ip link set c$CPID netns $CPID
+ip addr add 172.17.42.1/16 dev h$CPID
+iptables --table nat -A POSTROUTING -s 172.17.42.0/16 -j MASQUERADE
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# WECHSEL unshare Session
+
+ip link set lo up
+ip link set c<pid> name eth0 up
+ip addr add 172.17.42.3/16 dev eth0
+ip route add default via 172.17.42.1
+# zum schluss noch
+exec chroot / sh
+# zuvor nutzte man noch bash aus dem host

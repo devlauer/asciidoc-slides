@@ -1,0 +1,17 @@
+ifndef::imagesdir[:imagesdir: ../images]
+[%notitle]
+== Fragen?
+
+Fragen??
+
+[.notes]
+--
+Wichtig:
+* alle vorgestellten Building Blocks lassen sich unabhängig verwenden
+* man kann einzelne Prozesse über CGroups limitieren
+* man kann Netzwerke simulieren über network namespaces
+* man kann einen Debugger in einen Container einschleusen, der nicht durch die
+CGroups Limits beeinflusst wird
+* man kann Netzwerkadapter zwischen Containern verschieben
+* etc.
+--

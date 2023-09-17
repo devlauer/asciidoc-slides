@@ -22,6 +22,8 @@ jobs:
       run: npm i --save asciidoctor @asciidoctor/reveal.js
     - name: Generate docs-as-code Slides
       run: npx asciidoctor-revealjs ./src/docs/asciidoc/docs-as-code/docs_as_code.adoc -D ./build/slides/ -b revealjs
+    - name: Generate docs-as-code Slides
+      run: ./convert-slides.js
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:

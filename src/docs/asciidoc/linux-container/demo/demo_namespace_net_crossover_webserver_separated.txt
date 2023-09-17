@@ -1,0 +1,17 @@
+# zwei verschiedene Net Namespaces anlegen
+sudo ip netns add client
+sudo ip netns add server
+ip netns list # die aktuellen net Namespaces anzeigen
+sudo ip netns exec server ip ad # nur Loopback vorhanden
+sudo ip link add ptp-veth-client type veth peer name ptp-veth-server # Peer-To-Peer/Crossover Verbindung herstellen, die aber noch ohne IP und nicht aktiv ist
+ip link # zeigt beide erstellten Interfaces
+sudo ip link set ptp-veth-client netns client # Client Interface in client NS verschieben
+sudo ip link set ptp-veth-server netns server # Server Interface in server NS verschieben
+sudo ip netns exec server ip ad # zeigt, dass im Server NS nur ein Interface + Loopback ist
+sudo ip netns exec client ip addr add "10.10.10.10/24" dev ptp-veth-client # IP-Adresse für client zuweisen
+sudo ip netns exec server ip addr add '10.10.10.20/24' dev ptp-veth-server # IP-Adresse für server zuweisen
+sudo ip netns exec client ip link set dev ptp-veth-client up # das Interface aktivieren
+sudo ip netns exec server ip link set dev ptp-veth-server up # das Interface aktivieren
+sudo ip netns exec server 'python3 -m http.server' & # einen Testwebserver als geforkter Prozess starten
+sudo ip netns exec client curl 10.10.10.20:8000 # im client NS lässt sich dieser aufrufen
+curl --connect-timeout 3 10.10.10.20:8000 # direkt lässt sich dieser nicht aufrufen

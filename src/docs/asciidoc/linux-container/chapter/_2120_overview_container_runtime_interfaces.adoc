@@ -1,0 +1,20 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Container Runtimes - CRI
+
+** cri-containerd (containerd)
+** CRI-O
+
+[.notes]
+--
+--
+
+=== cri-containerd
+
+* Adapter für das CRI von Kubernetes, um containerd nutzen zu könne
+* containerd als Highlevel Runtime
+* runC als Lowlevel Runtime (änderbar)
+
+=== CRI-O
+
+* Implementierung des CRI durch Red Hat
+* nutzt Crun als Lowlevel Runtime

@@ -1,0 +1,9 @@
+cd /tmp
+mkdir lower upper workdir overlay
+
+sudo  mount -t overlay -o lowerdir=/tmp/lower,upperdir=/tmp/upper,workdir=/tmp/workdir none /tmp/overlay
+touch /tmp/lower/test.txt
+ls /tmp/overlay
+vi /tmp/overlay/test.txt
+cat /tmp/overlay/test.txt
+cat /tmp/lower/test.txt

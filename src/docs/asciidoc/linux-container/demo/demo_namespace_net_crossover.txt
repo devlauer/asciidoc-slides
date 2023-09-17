@@ -1,0 +1,13 @@
+ip netns add test # neuen net namespace erstellen
+ls -l /var/run/netns # zeigt alle net namespaces
+ls -l /proc/self/ns # zeigt die eigenen Namespaces an
+ip link add veth0 type veth peer name veth1 # erstellt eins Cross-Over Verbindung zwischen zwei virtuellen Interfaces
+ifconfig -a | grep veth # man sieht beide im aktuellen Namespace
+ip link set veth1 netns test # verschiebt das zweite Interface in den test Namespace
+ifconfig -a| grep veth # im aktuellen ist veth1 nicht mehr vorhanden
+ifconfig veth0 10.10.10.10 # im Root Namespace eine IP zuweisen
+ping 10.10.10.11 # funktioniert nicht
+ip netns exec test ipconfig veth1 10.10.10.11 # im test Namespace eine IP zuweisen
+ping 10.10.10.11 # funktioniert
+ip net ns exec ifconfig -a # im net namespace existiert nur veth1
+ifconfig -a # zeigt den Root Namespace

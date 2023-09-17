@@ -1,0 +1,19 @@
+# create a new process <pid>, with its own net ns
+sudo su
+unshare --net bash
+echo $$
+
+# weitere Session aufmachen
+sudo su
+# create a pair of (connected) veth interfaces
+ip link add name lehost type veth peer name leguest
+# put one of the in new net ns
+ip link set leguest netns <pid>
+
+# in guest (our unshared bash), setup leguest
+ip link set leguest name eth0
+ifconfig eth0 192.168.3.12
+ifconfig lo 127.0.0.1
+
+# in our host (our initial environment), setup lehost
+ifconfig lehost 192.168.3.1

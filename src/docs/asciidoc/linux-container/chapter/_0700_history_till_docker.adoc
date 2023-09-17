@@ -1,0 +1,22 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Historie Linux Container (3)
+
+[%step]
+* 2006 Process Containers (CGroups)
+* 2008 LXC
+* 2011 Cloud Foundry Warden
+* 2013 LMCTFY App Container (Google)
+* 2013 Docker Container Engine
+
+
+[.notes]
+--
+* LXC - erste Container Engine/Runtime (Google unterstützt)
+* LXC am Anfang noch mit Kernelmodifikation (bspw. net namespace erst ab 2009 verfügbar)
+* LMCTFY - let me contain that for you
+* Cloud Foundry Warden - Verwaltung von Containern auf verschiedenen Hosts
+* Docker: Prozess Isolation über Kernel CGroups and Namespaces kombiniert mit Tools für die Erstellung und das Verwalten von Images
+** zu Beginn auf Basis von LXC und AUFS - neu waren Images und Layering und der Fokus auf Usability, einfache Client/Server-Architektur mit HTTP-API/REST-API (über Unix oder TCP Socket)
+--
+
+include::_0750_docker_app_container.adoc[]

@@ -1,0 +1,81 @@
+mount --make-rprivate /
+# soll verhindern, dass die Mounts auf den Host übergehen
+mkdir -p images containers
+btrfs subvol create images/alpine
+CID=$(docker run -d alpine true)
+# einfache Variante, um an das Image über Docker zu kommen
+echo $CID
+docker export $CID | tar -C images/alpine/ -xf-
+# über docker exportieren, was ein tarball ergibt, was wiederum in das subvolume images/alpine entpackt wird
+ls images/alpine
+# nun ist ein komplettes image für alpine hier verfügbar
+btrfs subvol snapshot images/alpine/ containers/tupperware
+# ein snapshot des aktuellen standes erstellen, und dieser ist über containers/tupperware verfügbar
+touch containers/tupperware/THIS_IS_TUPPERWARE
+# damit wir sehen, wo wir sind, erzeugen wir eine Datei
+ls containers/tupperware
+# hier sieht man wo wir sind
+chroot containers/tupperware sh
+# das root-Verzeichnis in unseren container verschieben
+ls
+# zeigt das root Verzeichnis mit den Dateien von containers/tupperware
+apk
+# zeigt, dass wir  in alpine sind
+exit
+# wieder raus aus dem Dateisystem, um die eigentliche Containererstellung zu machen
+unshare --mount --uts --ipc --net --pid --fork bash
+hostname tupperware
+exec bash
+# bashname zeigt den neuen hostname
+ps
+# zeigt alle prozesse im container, aber mit der pid des hosts, da /proc noch vom host kommt
+pidof unshare
+# zeigt die pid im host
+kill <pid>
+# geht nicht, da die pid im namespace nicht bekannt ist
+mount -t proc none /proc
+ps
+# nun sieht man die pid im container
+umount /proc/
+cd /btrfs/containers/tupperware
+mk oldroot
+cd /
+mount --bind /btrfs/containers/tupperware/ /btrfs/containers/tupperware/
+mount --move /btrfs/containers/tupperware/ /btrfs/
+cd /btrfs
+ls
+pivot_root . oldroot/
+cd /
+ls
+# nun sind wir im Root-Verzeichnis im container
+mount
+# man sieht eine Menge mounts vom Hostsystem, die man loswerden muss
+umount -a
+# alles loswerden, klappt, da /oldroot/btrfs und /oldroot busy sind
+mount -t proc none /proc
+# proc wieder hinzufügen, damit die pids richtig angezeigt werden
+umount -l /oldroot/
+# damit auch das alte fs komplett weg ist
+ping www.google.de
+# wir haben aktuell kein Netzwerk, weshalb wir nichts erreichen
+# nun eine shell im host zusätzlich öffnen
+pidof unshare
+CPID=<pid>
+ip link add name h<pid> type veth peer name c<pid>
+ip link set c$CPID netns $CPID
+# nun zurück in die shell des containers wechseln
+ipconfig -a
+# nun sieht man das interface
+# nun wieder in die shell des hosts zurückwechseln
+ip link set h$CPID master docker0 up
+# an die docker bridge ankoppeln, deren Erzeugung vorher stattfinden muss
+# wieder in die shell des containers wechseln
+ip link set lo up
+ip link set c<pid> name eth0 up
+ip addr add 172.17.42.3/16 dev eth0
+# eine zufällige ip aus der docker range nehmen
+ip route add default via 172.17.42.1
+# funktionierte leider nicht komplett
+# zum schluss noch
+exec chroot / sh
+# zuvor nutzte man noch bash aus dem host

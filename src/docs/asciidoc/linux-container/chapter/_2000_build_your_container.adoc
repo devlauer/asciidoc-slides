@@ -1,0 +1,23 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Build your own container
+
+* soll nur grob zeigen wie es geht
+* nicht alle Aspekte werden gezeigt
+* nur mit Linux Tools
+* kein Union-FS, nur CoW
+
+[%notitle]
+=== Demo
+
+DEMO - build your own container
+
+[.notes]
+--
+----
+include::../demo/demo_build_your_own_container_overlay.txt[]
+----
+
+----
+include::../demo/demo_build_your_own_container_btrfs.txt[]
+----
+--
