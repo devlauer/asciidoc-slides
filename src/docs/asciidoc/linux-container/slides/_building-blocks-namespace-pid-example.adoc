@@ -1,0 +1,16 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== PID Namespace - Beispiel
+
+[%step]
+--
+image::pid_namespace_example.svg[role=stretch]
+--
+
+[.notes]
+--
+* durch die eigene Nummerierung kann in jedem Namespace die PID 1 vergeben werden,
+die wichtig für init-Systeme ist
+* wird PID 1 gekillt ist der Namespace gekillt
+* dadurch dass PID Namespaces geschachtelt sind, kann man Prozesse in Child-Namespaces
+sehen und damit erreichen
+--
