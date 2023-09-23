@@ -2,12 +2,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Building Block - Namespaces
 
 [%step]
-* Isolationlayer regelt Sichtbarkeit von Kernel-Ressourcen
-* Partitionierung über Kernel Strukturen
-* unterschiedliche Typen von NS
-* ein oder mehrere Prozesse können in einem NS sein
-* alle Prozesse sind in einem NS eines Typs
-* keine Namen je NS, sondern INodes
+* Isolationlayer im Kernel
+* regelt Sichtbarkeit von Kernel-Ressourcen
+* 1-n Prozesse pro Namespace
+* jeder Prozess ist in einem Namespace
+* keine Namen je Namespace, sondern INodes
 
 [.notes]
 --
