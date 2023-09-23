@@ -1,11 +1,10 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
-[.columns]
 == Docker Engine - lxc
 
-[.column%step]
+[%step]
 --
-image::Docker_lxc.svg[]
+image::Docker_lxc.svg[role=stretch]
 --
 
 [.notes]

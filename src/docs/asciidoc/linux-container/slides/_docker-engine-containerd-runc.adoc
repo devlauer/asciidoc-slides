@@ -1,13 +1,10 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
-
-
-[.columns]
 == Docker Engine
 
-[.column]
+[%step]
 --
-image::Docker_containerd_runc.svg[]
+image::Docker_containerd_runc.svg[role=stretch]
 --
 
 [.notes]
