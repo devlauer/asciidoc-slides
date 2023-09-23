@@ -1,0 +1,13 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[%notitle]
+=== Demo - build your own container
+
+DEMO - build your own container
+
+[.notes]
+--
+----
+include::../demo/demo_build_your_own_container_with_chroot_and_cgroups.txt[]
+----
+--

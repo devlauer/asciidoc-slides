@@ -1,0 +1,33 @@
+sudo su
+# cgcreate is in the libcgroup package
+# dnf install libcgroup or apt-get install libcgroup
+
+podman export $(podman run -d alpine true) -o alpine.tar.gz
+
+# extract alpine.tar.gz into a directory
+mkdir container-root
+mkdir container-cow
+mkdir container-work
+mkdir container-fs
+mount -t overlay -o lowerdir=./container-root,upperdir=./container-cow,workdir=./container-work none ./container-fs
+cd container-root
+tar -xf ../alpine.tar.gz
+cd ../container-fs
+
+# generate a random cgroup id
+uuid="cgroup_$(shuf -i 1000-2000 -n 1)"
+# create the cgroup
+cgcreate -g "cpu,cpuacct,memory:$uuid"
+
+# assign CPU/memory limits to the cgroup
+cgset -r cpu.shares=512 "$uuid"
+cgset -r memory.limit_in_bytes=1000000000 "$uuid"
+
+# The following line does a lot of work:
+# cgexec: use our new cgroup
+# unshare: make and use a new PID, network, hostname, and mount namespace
+# chroot: change root directory to current directory
+# mount: use the right /proc in our new mount namespace
+# hostname: change the hostname in the new hostname namespace to something other
+cgexec -g "cpu,cpuacct,memory:$uuid" unshare --fork --mount --uts --ipc --pid --net --mount-proc chroot "$PWD" /bin/sh -c "/bin/mount -t proc proc /proc && hostname container-hostname && /bin/sh"
+
