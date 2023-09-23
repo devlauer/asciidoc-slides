@@ -1,6 +1,7 @@
 ifndef::imagesdir[:imagesdir: ../images]
 == Andere Building Blocks
 
+[%step]
 * Capabilities
 * SecComp-BPF
 * SELinux/AppArmor
