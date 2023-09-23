@@ -1,0 +1,14 @@
+== Dockerfile - Example
+
+----
+FROM ubuntu:22-04
+RUN apt-get install apache
+ADD html /www-data
+ENTRYPOINT ["/usr/sbin/apache2"]
+----
+
+[.notes]
+--
+* RUN, ADD, and COPY machen echte neue Layer
+* restliche Befehle nur intermediate Layer
+--

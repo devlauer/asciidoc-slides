@@ -1,0 +1,38 @@
+ifndef::imagesdir[:imagesdir: ../images]
+[.columns]
+== Hypervisor vs Container
+
+[.column%step]
+--
+image::VM.svg[]
+--
+
+[.column%step]
+--
+image::Container.svg[]
+--
+
+[.notes]
+--
+* Hypervisor basiert auf der Emulation von Hardware
+** neues OS und Programme on Top auf der Hardwar
+** mehrere Kernel
+** beliebige OS möglich
+
+* Container sind die Virtualisierung von OS Subsystemen
+** nur ein Kernel
+** it feels like a 'vm' - own process space, own network interface, can run stuff as root, can install packages, can run services,  can mess up routing, iptables ...
+** in Linux möglich durch sehr stabile Kernel API
+** nur OS kompatibel zur Kernel API möglich - damit nur Linux auf Linux
+** aufgrund der Stabilität der Kernel APIs weitestgehend unabhängig von der Kernel Version
+** unabhängig von der Distribution
+** container und Hostarchitektur müssen aber passen
+** keine eigenen Module
+** init / syslog, cron sind optional
+** kann ein normaler isolierter Prozess auf der Host Maschine sein
+
+* Container sind
+** nur eine Gruppe von Prozessen
+** isoliert von anderen Prozessgruppen
+**
+--

@@ -1,0 +1,32 @@
+== Namespaces - Verwendung
+
+[cols="a,a,a,a"]
+|===
+// Processes
+| Prozess A
+| Prozess B
+| Prozess C
+| Prozess D
+
+// Pid Namespaces
+|pid:[1]
+2+| pid:[2]
+|pid:[3]
+
+// Net Namespace
+2+|net:[1]
+|net:[2]
+|net:[3]
+
+// Mount Namespace
+3+|mount:[1]
+|mount:[2]
+
+|===
+
+[.notes]
+--
+* hohe Flexibilität
+* viele Szenarien möglich
+--
+

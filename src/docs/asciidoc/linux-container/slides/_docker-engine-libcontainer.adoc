@@ -1,0 +1,14 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[.columns]
+== Docker Engine - libcontainer
+
+[.column]
+--
+image::Docker_libcontainer.svg[]
+--
+
+[.notes]
+--
+* mit Standardisierung durch OCI wird libcontainer Teil von runC und diese die Default Container-Runtime
+--

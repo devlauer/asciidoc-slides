@@ -1,0 +1,8 @@
+== runC
+
+* Low-Level
+* fokussiert sich auf die Container Ausführung
+** keine API, kein Image Management, kein Build, etc.
+* Nachfolger von libcontainer (noch enthalten)
+* geschrieben in Go
+* durch die OCI verwaltet, von Docker Inc. bereitgestellt

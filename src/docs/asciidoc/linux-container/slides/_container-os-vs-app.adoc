@@ -1,0 +1,13 @@
+ifndef::imagesdir[:imagesdir: ../images]
+[.columns]
+== OSContainer vs App Container
+
+[.column%step]
+--
+image::OSContainer.svg[]
+--
+
+[.column%step]
+--
+image::AppContainer.svg[]
+--

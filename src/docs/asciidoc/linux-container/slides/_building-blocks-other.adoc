@@ -1,0 +1,28 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Andere Building Blocks
+
+* Capabilities
+* SecComp-BPF
+* SELinux/AppArmor
+* Checkpoint/Restore in Userspace (CRIU)
+
+[.notes]
+--
+* Checkpoint and Restore in Userspace (http://www.criu.org)
+** notwendig für Container-Migration
+** reduziert eine Gruppe von Prozessen zu einer Debug-Information Repräsentation
+** die Debug-Information kann überall wieder hergestellt werden
+** auch auf anderen Kernelversionen
+* Capabilities
+** feingranulare Einteilung der Root-Rechte
+** okay: cap_ipc_lock, cap_lease, cap_mknod, cap_net_admin, cap_net_bind_service, cap_net_raw
+** problematisch: cap_sys_admin (mount!)
+** root so gut wie nie vergeben
+* SecComp Filter von Kernelaufrufen
+** Profil von Docker als Basis vorhanden
+* SELinux/AppArmor ...
+** weitere Sicherheitseinschränkungen - eigener Vortrag
+** interessant
+*** https://github.com/jfrazelle/bane (AppArmor profile generator)
+*** https://github.com/containers/udica (SELinux policy generator)
+--

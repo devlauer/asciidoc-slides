@@ -1,0 +1,11 @@
+[%notitle]
+== Docker - Demo
+
+Docker - Demo CGroups
+
+[.notes]
+--
+----
+include::../demo/demo_docker_beispiel_namespaces_cgroups.txt[]
+----
+--

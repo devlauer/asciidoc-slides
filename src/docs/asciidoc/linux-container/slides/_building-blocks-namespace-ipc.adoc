@@ -1,0 +1,14 @@
+== IPC Namespace
+
+* eigene IPC Semaphoren
+* eigene IPC Message Queues
+* eigenes IPC Shared Memory
+* Vermeidung von Konflikten der Nutzer
+
+[.notes]
+--
+* "System V IPC" msgget, semget, shmget
+** das Problem xxget frägt nach einem Schlüssel, der abgeleitet ist von einem INode -> Lösung IPC Namespace
+* abgelöst durch POSIX Alternativen: mq_open, sem_open, shm_open
+* manche Tools wie PostgreSQL benötigen IPC
+--

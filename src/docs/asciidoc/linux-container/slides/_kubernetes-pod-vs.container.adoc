@@ -1,0 +1,14 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[.columns]
+=== Pod - Namespaces/CGroups
+
+[.column.is-one-third%step]
+--
+image::container_namespaces_cgroup.svg[]
+--
+
+[.column.is-two-thirds%step]
+--
+image::pod_container_namespaces_cgroups.svg[]
+--

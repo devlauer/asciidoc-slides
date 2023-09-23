@@ -1,18 +1,1 @@
-ifndef::imagesdir[:imagesdir: ../images]
-== OCI - Open Container Intiative
-
-[%step]
-* Gründer Docker Inc., CoreOS und Maintainer AppC
-* Ziel: Standardisierung von Containern
-* entwickelt runC ()
-* Spezifikationen:
-** Runtime
-** Image
-** Distribution
-
-[.notes]
---
-* Runtime- Container Runtime für den Start von Containern (Lowlevel)
-* Image - wie muss ein Image aufgebaut sein, wie die Metadaten
-* Distribution - API/Protokoll für Image-Abruf / Registry
---
+include::../slides/_oci-general.adoc[]

@@ -1,0 +1,12 @@
+== UTS Namespace
+
+* eigener Hostname
+* eigener Domainname
+* UTS, da nodename und domainname Teil der utsname Datenstrutur
+* relevant bei uname() system call
+* nützlich für die Frage: wo bin ich?
+
+[.notes]
+--
+* Unix Time Sharing - historisch ist der Hostname Teil der Datenstruktur utsname, die bei uname() system call verwendet wird (nodename and domainname Felder darin)
+--

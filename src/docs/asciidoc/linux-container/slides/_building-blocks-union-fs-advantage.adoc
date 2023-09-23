@@ -1,0 +1,8 @@
+== Vorteile
+
+[%step]
+* eine neue Containerinstanz kann sofort erzeugt werden
+* kein Kopieren des gesamten Dateisystems
+* der eigene CoW-Layer zeigt sofort an, was geändert wurde
+* geringerer Plattenplatzbedarf
+* schnellere Boot-Zeiten

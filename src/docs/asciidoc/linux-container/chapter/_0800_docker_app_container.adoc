@@ -1,0 +1,1 @@
+include::../slides/_container-os-vs-app.adoc[]

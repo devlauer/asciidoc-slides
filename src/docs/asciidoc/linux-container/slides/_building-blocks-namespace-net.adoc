@@ -1,0 +1,19 @@
+== Network Namespace
+
+* eigener Network Stack je Namespace
+** Network Interfaces (auch lo/127.0.0.1)
+** IP Adressen, Routing Tables, iptables Rules, Sockets, /proc/net
+* Netzwerk Interfaces lassen sich zwischen Namespaces verschieben
+** ip link set dev eth0 netns PID
+
+[.notes]
+--
+* Kommunikation zwischen Containern/Namespaces möglich
+* eigene Netzwerkisolationen
+* verschiedene Netzwerktopologien
+** direkte Kommunikation wie mit Cross-Over-Kabel
+* Anbindung an Host-Netzwerk über bridge
+* geshartes Localhost möglich
+* für Container sehr relevant (Docker pro Container ein Network-Namespace)
+* Sharing möglich wie bei Pods oder Amazon ECS tasks (awsvpc networking mode)
+--

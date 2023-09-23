@@ -1,0 +1,14 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Historie Linux Container (4)
+
+[%step]
+* 2013 Docker
+* 2014 rkt (CoreOS)
+* 2015 lmctfy integriert in libcontainer
+* 2015 OCI gegründet
+
+[.notes]
+--
+* rkt ist die CoreOS Referenz Implementierung einer offenen Spezifikation,
+** Ziel Standardisierung der Packetierung von Images und Runtimes für Linux Container
+--

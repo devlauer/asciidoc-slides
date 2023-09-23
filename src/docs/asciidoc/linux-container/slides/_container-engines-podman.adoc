@@ -1,0 +1,4 @@
+== Podman
+* nutzt Crun als Lowlevel-Runtime (änderbar)
+* Skopeo für Images
+* Buildah für Build

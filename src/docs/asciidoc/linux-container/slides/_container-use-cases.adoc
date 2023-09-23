@@ -1,0 +1,18 @@
+=== Use Cases
+
+[%step]
+* Continuous Integration / Continuous Deployment
+* Konsistente Umgebungen
+* Dependency Hölle auf OS-Ebene verlassen
+* Anzahl VMs reduzieren
+* Günstigeres/effektiveres Hosting
+* Schnelle Skalierung
+* Einfachere Integrationstests
+
+[.notes]
+--
+* Konsistente Umgebungen
+** gleiche Umgebung von lokal bis Prod
+** Isolation von Infrastruktur und Umgebungen
+** Portabilität
+--

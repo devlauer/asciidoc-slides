@@ -1,0 +1,12 @@
+== CGroups Namespace
+
+* Isolierung/Virtualisierung spezifischer CGroups Pfade
+* eigene Sicht auf /proc/$PID/cgroup Datei und cgroup mounts
+* komplett isolierte Container ohne Sicht auf CGroup möglich
+
+[.notes]
+--
+* Sicherheitsfeature, um Informationen bzgl. CGroups nicht nach außen zu geben.
+* Normalerweise zeigt /proc/$PID/cgroup den kompletten CGroup-Baum, so dass auch andere
+Informationen dort für den Container sichtbar werden
+--

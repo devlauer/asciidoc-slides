@@ -1,0 +1,5 @@
+== Kata Containers
+
+* Container werden in VMs (MicroVM) ausgeführt
+* stärkere Isolation als bei normalen Containern
+* implementiert die OCI-Runtime-Spec -> Replacement für runC

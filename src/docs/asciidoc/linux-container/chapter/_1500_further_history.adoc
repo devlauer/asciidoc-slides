@@ -1,18 +1,1 @@
-ifndef::imagesdir[:imagesdir: ../images]
-== Historie Linux Container (5)
-
-[%step]
-* 2017 containerd/rkt container runtime an cncf
-* 2017 Beginn der VM-like Container Runtimes
-* 2018 MicroVMs mit Firecracker
-* 2018 Start von Podman als Alternative zu Docker
-* 2019 CRI-O container runtime
-
-[.notes]
---
-* VM-like Container Runtimes
-** Kata Containers
-** gVisor - Reduktion System calls wie Kata Containers
-** Nabla -  Anzahl System calls stark reduziert, aber spezielle Images notwendig
-MicroVM mit Firecracker -> kann bspw. Kata Containers als Containerlaufzeit nutzen bzw. Firecracker ist VMM für Kata
---
+include::../slides/_container-history_2017-2019.adoc[]

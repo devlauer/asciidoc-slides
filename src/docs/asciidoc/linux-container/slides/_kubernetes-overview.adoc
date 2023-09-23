@@ -1,0 +1,7 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+== Übersicht Kubernetes
+:figure-caption!:
+
+.Siehe https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png
+image::https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png[]

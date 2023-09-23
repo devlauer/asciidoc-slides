@@ -1,7 +1,1 @@
-ifndef::imagesdir[:imagesdir: ../images]
-== Historie Linux Container (5)
-
-[%step]
-* 2015 OCI gegründet
-* 2016 Übergang Kubernetes in CNCF
-* 2017 Übergang von containerd von Docker und rkt container runtime an cncf
+include::../slides/_container-history_2015-2017.adoc[]

@@ -1,0 +1,21 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Building Block - Union Filesystem
+
+[%step]
+* Überlagerung/Merging von Dateisystem-Abbildern
+* Ziel: Einsparung von Plattenkapazitäten
+* Wiederverwendung von Teilen die bei allen Containern gleich sind
+* Aufteilung eines Images in unterschiedliche Layer
+* der Top-Layer ist ein copy-on-write layer oberhalb des Images
+* AUFS - initiales Union FS in Docker
+
+[.notes]
+--
+* ursprünglicher Use-Case: ein Read-Layer, ein Read-Write-Layer
+* jede Zeile in einem Dockerfile entspricht einem Layer
+** wird daher auch bei Image-Erstellung genutzt
+* der Top-Layer hilft dabei Änderungen automatisch festzustellen
+* AUFS mittlerweile deprecated
+** geringe Anzahl Entwickler
+** nicht im Mainstream Kernel
+--

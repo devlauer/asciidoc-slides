@@ -1,0 +1,13 @@
+== runhcs (Windows)
+
+* ein Fork von runC
+* entwickelt für Windows
+* kommuniziert mit dem HCS (Host Compute Service)
+* Laufzeitumgebungen:
+** Hyper-V
+** Windows process containers
+
+[.notes]
+--
+* bei Windows process containers muss das Image mit dem Host übereinstimmen
+--

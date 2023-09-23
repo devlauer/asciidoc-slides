@@ -1,0 +1,7 @@
+== systemd-nspawn
+
+* im System-D Umfeld gedacht für
+** "for debugging, testind and building"
+** "similar to chroot, but more powerful"
+** "implements the container interface"
+* unterstützt OCI Images

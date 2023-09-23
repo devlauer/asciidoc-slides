@@ -1,0 +1,15 @@
+[%notitle]
+== Namespaces - Demo User
+
+Demo - User Namespace
+
+[.notes]
+--
+----
+include::../demo/demo_namespace_user.txt[]
+----
+----
+include::../demo/demo_namespace_user_2.txt[]
+----
+
+--

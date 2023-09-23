@@ -1,0 +1,21 @@
+== CGroups - Nutzung
+
+[%step]
+* sicht-/steuerbar über ein Pseudo-FS
+* über tasks/cgroup.procs Datei Mitgliedschaft änderbar
+* beliebig viele Untergruppen möglich
+* Konfiguration über Unterdateien
+
+
+[.notes]
+--
+* Pseudo-FS häufig unter /sys/fs/cgroup oder /cgroup
+* Änderung mkdir /sys/fs/cgroup/memory/somegroup/subcgroup
+* Änderung echo $PID > /sys/fs/cgroup/.../tasks
+* Konfiguration echo 10000000 > /cgroup/aloha/memory.limit_in_bytes
+* vorgestellte Variante ist CGroups v1
+* CGroups v2 hat den Ressourcenbaum vereinheitlicht
+* nicht alle Ressourcen aus v1 existieren in v2
+* v2 und v1 lassen sich parallel nutzen
+* v2 notwendig für Rootless
+--

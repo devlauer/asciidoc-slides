@@ -1,0 +1,5 @@
+=== LXD
+* REST API
+* nutzt LXC als Runtime
+* Verwaltung von LXD-Images
+* Integration in OpenStack

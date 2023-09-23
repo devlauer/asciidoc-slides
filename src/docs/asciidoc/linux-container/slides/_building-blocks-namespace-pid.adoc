@@ -1,0 +1,17 @@
+== PID Namespace
+
+* je NS eigener Prozessbaum mit eigener Nummerierung
+* Besonderheit PID 1
+* Prozesse sieht eigenen Prozessbaum oder den abgeleiteter NS
+* PID NS können geschachtelt werden
+* ein Prozess kann verschiedene PIDs je nach NS haben
+* keine Sicht auf Parent- oder Geschwister-NS
+
+[.notes]
+--
+* durch die eigene Nummerierung kann in jedem Namespace die PID 1 vergeben werden,
+die wichtig für init-Systeme ist
+* wird PID 1 gekillt ist der Namespace gekillt
+* dadurch dass PID Namespaces geschachtelt sind, kann man Prozesse in Child-Namespaces
+sehen und damit erreichen
+--

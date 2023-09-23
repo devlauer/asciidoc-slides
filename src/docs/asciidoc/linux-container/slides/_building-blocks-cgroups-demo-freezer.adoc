@@ -1,0 +1,11 @@
+[%notitle]
+== CGroups - Demo
+
+* Demo - Cgroup Freezer
+
+[.notes]
+--
+----
+include::../demo/demo_cgroups_freezer.txt[]
+----
+--

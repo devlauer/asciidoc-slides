@@ -1,0 +1,5 @@
+== LXC
+* Sammlung von Userland Tools zur Erstellung von Containern
+* Ein Container wird als Verzeichnis unter /var/lib/lxc angelegt
+* Kleine Config-Datei und Container mit Root FS
+* soll einfach für Admins sein, ist aber auch schwerer für Entwickler

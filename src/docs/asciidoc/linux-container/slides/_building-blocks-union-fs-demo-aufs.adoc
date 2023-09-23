@@ -1,0 +1,11 @@
+[%notitle]
+=== Union Filesystem - Demo AUFS
+
+DEMO - AUFS
+
+[.notes]
+--
+----
+include::../demo/demo_union_filesystem_aufs.txt[]
+----
+--

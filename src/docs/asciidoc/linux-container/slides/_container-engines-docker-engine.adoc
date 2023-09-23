@@ -1,0 +1,6 @@
+== Docker Engine
+* ein Daemon der über eine REST API kontrolliert wird
+* nutzt containerd als Highlevel-Runtime
+* nutzt runc als Lowlevel-Runtime (änderbar)
+* umfänglichste Container Engine
+* verwaltet Container, Images, Builds and more

@@ -1,0 +1,4 @@
+== CRI-O
+
+* Implementierung des CRI durch Red Hat
+* nutzt Crun als Lowlevel Runtime

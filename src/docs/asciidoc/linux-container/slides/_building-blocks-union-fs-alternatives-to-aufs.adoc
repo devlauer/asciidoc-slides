@@ -1,0 +1,7 @@
+== Alternative Filesysteme
+
+[%step]
+* Overlay/Overlay2
+* Btrfs (Layer über Snapshots)
+* ZFS (Layer über Snapshots)
+* VFS (kein Union!)

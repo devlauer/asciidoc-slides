@@ -1,22 +1,3 @@
 ifndef::imagesdir[:imagesdir: ../images]
-== Historie Linux Container (1)
 
-[%step]
-* 1979 Unix V7 - chroot system call
-* 1982 BSD - chroot als Befehl
-* 2000 BSD Jails
-* 2002 Namespaces in Plan 9
-* 2002 Linux Mount Namespace
-
-[.notes]
---
-* chroot
-** versetzt das Root-Verzeichnis an eine andere Stelle und wurde zur Prozessisolation genutzt
-** chroot keine Security Sandbox, da einfach zu entkommen (bspw. ein Verzeichnis außerhalb des Rootverzeichisses bewegen)
-* Jails
-** Poul-Henning Kamp erweiterte dies
-** Bedarf von Derrik Woolworth als Hoster für unterschiedliche Webserver auf der gleichen Maschine -> Erweiterung
-** auch genutzt als one-way-mirror, um Angriffe zu beobachten zu können (honeypot)
-* Plan 9 ist als Nachfolger von Unix in den AT&T Bell Laboratories entwickelt worden
-* Namespace Konzept wurde in Linux adaptiert und auf Mount angewendet (chroot extended)
---
+include::../slides/_container-history_1979-2002.adoc[]

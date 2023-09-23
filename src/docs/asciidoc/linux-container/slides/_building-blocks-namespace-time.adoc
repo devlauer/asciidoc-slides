@@ -1,0 +1,8 @@
+
+=== Time Namespace
+
+* Virtualisiert/Isoliert
+** CLOCK_MONOTONIC
+** CLOCK_BOOTTIME
+** Nicht CLOCK_REALTIME !!
+* relevant bspw. für checkpoint/restore

@@ -1,0 +1,18 @@
+== Mount namespace
+
+* deluxe chroot()
+* jeder neue Mount NS erbt alle Mounts des Parent NS
+* jeder Mount NS kann sein eigenes RootFS haben
+* gemountete Dateisysteme sind nur im gleichen NS sichtbar
+* Achtung: Besonderheit spezielle Dateisysteme
+
+[.notes]
+--
+* spezielle Dateisysteme des Systems erfordern einen Remount bspw. bei Containern
+** procfs (to see your processes)
+** devpts (to see your pseudo-terminals)
+** /tmp (scoped per user, per service...)
+* masking of /proc, /sys
+* einen Mount von einem Namespace zum nächsten zu bewegen ist nicht einfach
+* Container Image als RootFS mounten
+--

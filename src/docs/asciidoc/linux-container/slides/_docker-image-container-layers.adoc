@@ -1,0 +1,5 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Dockerfile - Layers
+
+image::container_and_image_layer.svg[]
+

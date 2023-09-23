@@ -1,48 +1,11 @@
-ifndef::imagesdir[:imagesdir: ../images]
-== Building Block - CGroups
-
-[%step]
-* Limitierung und Priorisierung von Ressourcen
-* Accounting und Aufzeichnung der Ressourcennutzung
-* Kontrolle über Prozesse
-* Organisation von Prozessgruppen für Ressourcennutzung
-* Ressourcen -> unterschiedliche Subsysteme
-* jedes Subsystem hat eine eigene Hierarchie (Baum)
-
-[.notes]
---
-* Namespaces sind eher Qualitätsisolierung (What can be seen),
-CGroups eher Quantitätsisolierung (how much can be used)
-* da jeder Prozess in einem Knoten der CGroups ist und auch in einem Namespace, ist
-damit auch ohne Container-Initialisierung jeder Prozess in einem Container dem Root-Container.
-* PID 1 ist immer der Root-Knoten jeder Hierarchie
-* jeder Prozess ist ein Knoten in jeder Hierarchie nicht mehr
-* jeder Prozess startet im Knoten des Parent
-* sind Prozesse im gleichen Knoten, teilt die Prozessgruppe die Ressourcen
---
-
-== CGroups - Nutzung
-
-[%step]
-* sicht-/steuerbar über ein Pseudo-FS
-* über tasks/cgroup.procs Datei Mitgliedschaft änderbar
-* beliebig viele Untergruppen möglich
-* Konfiguration über Unterdateien
 
 
-[.notes]
---
-* Pseudo-FS häufig unter /sys/fs/cgroup oder /cgroup
-* Änderung mkdir /sys/fs/cgroup/memory/somegroup/subcgroup
-* Änderung echo $PID > /sys/fs/cgroup/.../tasks
-* Konfiguration echo 10000000 > /cgroup/aloha/memory.limit_in_bytes
-* vorgestellte Variante ist CGroups v1
-* CGroups v2 hat den Ressourcenbaum vereinheitlicht
-* nicht alle Ressourcen aus v1 existieren in v2
-* v2 und v1 lassen sich parallel nutzen
-* v2 notwendig für Rootless
---
+include::../slides/_building-blocks-cgroups-general.adoc[]
 
-include::_0620_cgroups_types.adoc[]
+include::../slides/_building-blocks-cgroups-usage.adoc[]
 
-include::_0640_cgroups_demo.adoc[]
+include::../slides/_building-blocks-cgroups-types.adoc[]
+
+include::../slides/_building-blocks-cgroups-demo-pids.adoc[]
+
+include::../slides/_building-blocks-cgroups-demo-freezer.adoc[leveloffset=+1]

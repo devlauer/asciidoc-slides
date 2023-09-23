@@ -1,0 +1,11 @@
+[%notitle]
+== Namespaces -  Demo PID
+
+DEMO - PID namespace
+
+[.notes]
+--
+----
+include::../demo/demo_namespace_pid.txt[]
+----
+--

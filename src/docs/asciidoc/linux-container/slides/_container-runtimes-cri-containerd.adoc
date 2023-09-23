@@ -1,0 +1,5 @@
+== cri-containerd
+
+* Adapter für das CRI von Kubernetes, um containerd nutzen zu könne
+* containerd als Highlevel Runtime
+* runC als Lowlevel Runtime (änderbar)

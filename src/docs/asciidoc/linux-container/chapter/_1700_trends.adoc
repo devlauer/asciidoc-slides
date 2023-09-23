@@ -1,17 +1,1 @@
-ifndef::imagesdir[:imagesdir: ../images]
-== Trends
-
-* Rootless Container
-* Security bei Containern
-* MicroVMs + Container
-* WebAssembly (Wasm Edge Runtime in CNCF)
-
-[.notes]
---
-* Zukunft WebAssembly? https://www.kubesphere.io/blogs/will-cloud-native-webassembly-replace-docker_/
-** WebAssemblies starten bis zu 100x schneller
-** geringerer Memory Footprint
-** geringerer Disk Footprint
-** gutes Sicherheitsmodell
-** allerdings eingeschränkter, aufwändigere Toolchain, komplizierter
---
+include::../slides/_container-trends_2019ff.adoc[]

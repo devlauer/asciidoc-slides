@@ -1,0 +1,38 @@
+ifndef::imagesdir[:imagesdir: ../images]
+[.columns]
+== Ähnliche Systeme
+
+[column.has-text-left]
+--
+[%step]
+* BSD Jails (2000)
+* Solaris Zones (2004)
+* AIX Workload Partitions (2008)
+
+--
+[%step]
+* Linux VServer (2001)
+* OpenVZ - Virtuozzo (2005)
+* Windows Container (2016)
+--
+--
+
+[.notes]
+--
+* BSD Jails -> first class citizen, da direkte Kernelbefehle existieren
+** ist als BSD Jails in FreeBSD 4 inkludiert worden
+* Solaris Zones ähnlich zu Jails aber mit Snapshots und Cloning über ZFS
+** Solaris Zones hießen zeitweise Container
+* AIX WPARS - released in AIX 6.1 erlaubte die Virtualisierung eines OS ohne eine komplette LPAR zu erstellen
+
+* Linux VServer -> gepatchter Kernel (Debian) auf jail system basierend
+* OpenVZ
+** gepatchter kernel (muss man selbst machen)
+** released durch Parallels/Virtuozzo
+** feature wie live migration (CRIU beeinflusst) und resource management (Cgroups beeinflusst)
+* Windows Container - in Zusammenarbeit mit Docker Inc. entstanden ähnlich wie Linux Container
+(CGroups, Namespaces, Capabilities)
+** Process Containers
+** Hyper-V Containers
+--
+

@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Namespace Typen
+
+[%step]
+* Mount Namespace (2002 Kernel 2.4.19)
+* UTS Namespace (2006 Kernel 2.6.19)
+* IPC Namespace (2006 Kernel 2.6.19)
+* PID Namespace (2008 Kernel 2.6.24)
+* Network Namespace (2009 Kernel 2.6.29)
+* User Namespace (2008-2013 Kernel 3.8)
+* CGroups Namespace (2016 Kernel 4.6)
+* Time Namespace (2020 Kernel 5.6 )
+
+[.notes]
+--
+* Mount NS - unterschiedliche Mount Points, Dateisysteme
+** Verzeichnisbaum sollte für jeden Container unterschiedlich sein
+* UTS NS - für separate Hostnamen
+** Unix Time Sharing - historisch ist der Hostname Teil der Datenstruktur utsname, die bei uname() system call verwendet wird (nodename and domainname Felder darin)
+* IPC NS - Isolation for message queues etc.
+** system v init
+** postgresql
+* PID NS - unterschiedliche Prozess-ID Bäume, wichtig für init-Systeme -> pid 1
+* Network NS - Netzwerk Interfaces, Routing etc.
+** ein Netzwerk Interface kann nur zu einem Namespace gehören
+* User Namespace - Red Hatter Eric W. Biederman bereits in 2008 begonnen 1. Version
+** root innerhalb, aber rootless außerhalb
+* CGroups Namespace - nicht zu verwechseln mit CGroups, sondern mit der Sicht auf diese
+* Time Namespace - unterschiedliche Systemzeiten
+* syslog namespace (vorgeschlagen von Huawei, aber bisher abgelehnt)
+* Prozesse können unterschiedliche Namespaces referenzieren
+--
+
+

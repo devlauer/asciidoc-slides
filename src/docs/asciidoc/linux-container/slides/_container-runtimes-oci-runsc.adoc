@@ -1,0 +1,10 @@
+== runsc (gVisor)
+
+* zusätzliches Sandboxing für Container
+* Fokus auf Effektivität, Sicherheit und Usability
+* App-Kernel/Unikernel (App+libOS VMs on hypervisor)
+** implementiert 200 System Calls im Userspace
+** fängt diese ab über PTrace oder KVM
+** nur Module die notwendig sind -> schneller als normale VMs
+* soll bei Google App Engine und Google Kubernetes Engine im spezifischen Einsatz sein
+* Nachteil: Overhead

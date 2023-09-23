@@ -13,7 +13,7 @@ include::./chapter/_0200_other_unix_container_systems.adoc[]
 
 include::./chapter/_0300_history_till_namespaces.adoc[]
 
-include::./chapter/_0400_namespaces_general.adoc[]
+include::./chapter/_0400_namespaces.adoc[]
 
 include::./chapter/_0500_history_till_cgroups.adoc[]
 
@@ -21,9 +21,11 @@ include::./chapter/_0600_cgroups_general.adoc[]
 
 include::./chapter/_0700_history_till_docker.adoc[]
 
-include::./chapter/_0800_union_filesystem.adoc[]
+include::./chapter/_0800_docker_app_container.adoc[]
 
-include::./chapter/_1000_docker_image.adoc[]
+include::./chapter/_0900_union_filesystem.adoc[]
+
+include::./chapter/_1000_docker.adoc[]
 
 include::./chapter/_1100_history_till_OCI.adoc[]
 
@@ -39,6 +41,9 @@ include::./chapter/_1600_other_building_blocks.adoc[]
 
 include::./chapter/_1700_trends.adoc[]
 
-include::./chapter/_2100_overview_container_engines.adoc[]
-
 include::./chapter/_1900_questions.adoc[]
+
+include::./chapter/_2000_build_your_container.adoc[]
+
+include::./chapter/_2100_overview_container_engines_and_runtimes.adoc[]
+

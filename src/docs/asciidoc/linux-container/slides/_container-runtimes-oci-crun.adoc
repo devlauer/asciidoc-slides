@@ -1,0 +1,9 @@
+== Crun
+
+* Low-Level
+* fokussiert sich auf die Container Ausführung
+** keine API, kein Image Management, kein Build, etc.
+* deutlich kleiner als runC
+* erste OCI-Runtime, die CGroups v2 unterstützte
+* von Red Hat supported
+* geschrieben in C

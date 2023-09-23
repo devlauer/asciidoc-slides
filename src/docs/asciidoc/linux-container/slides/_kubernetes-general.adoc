@@ -1,0 +1,16 @@
+== Kubernetes
+
+[%step]
+* Container-Orchestrierung
+* Steuerung über API/CLI
+* Verwaltung über mehrere Hosts hinweg
+* aufgeteilt in Control Planes und Worker Nodes
+* über Plugins, APIs erweiterbar
+* unterstützt RBAC
+* von Google als Neuentwicklung von Borg geschaffen
+
+[.notes]
+--
+* Orchestrierung = Verwaltung der technischen Container Infrastruktur
+* Verfügbarkeit, Lastverteilung, Erreichbarkeit von Services
+--

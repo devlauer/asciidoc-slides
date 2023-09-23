@@ -1,0 +1,28 @@
+== Vorteile Container
+
+[%step]
+* Kernel-Update für alle Subsysteme
+* Elastizität/Skalierung
+** Ressourcenverwaltung/-limitation
+** Geschwindigkeit
+* Isolation
+* run everywhere/anything
+
+[.notes]
+--
+* Elastizität/Skalierung
+** Memory
+*** ein Kernel verwaltet die Memory Pages -> schneller (Mikro-/Nanosekunden statt Sekunden)
+*** verschieben über CGroups
+*** bei VM kämpfen technisch unterschiedliche Kernel gegeneinander (Memory Ballooning, um Speicher an Guest abzugeben)
+*** bei VM sieht nur memory pages, nicht welche wie verwendet werden, wenn überlastet, mit hoher Wahrscheinlichkeit die falsche herausgenommen, bei einem Kernel besser
+** Virtuozzo/Parallels konnte auf gleicher Hardware bis zu dreimal mehr Virtual Environments (Container) erstellen als VMs
+** Footprint (es lassen sich in der Regel 10x mehr App-Container als Vms auf gleicher Hardware betreiben)
+** niedrigere Limits für Programme als durch die Maschine gegeben
+** Images können kleiner sein als bei VMs
+* Isolation
+** Prozesse sehen sich gegenseitig nicht und auch nicht deren Ressourcen
+** Container haben ihr eigenes Netzwerkinterface, ihr eigener Speicher/CPU, Isolation untereinander, eigenes Dateisystem
+* run everywhere/anything
+** alles was auf einem Linux-Kernel läuft, läuft auch im Container
+--

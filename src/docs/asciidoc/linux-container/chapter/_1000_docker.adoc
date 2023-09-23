@@ -1,0 +1,13 @@
+include::../slides/_docker-image-general.adoc[]
+
+include::../slides/_docker-image-dockerfile-example.adoc[leveloffset=+1]
+
+include::../slides/_docker-image-container-layers.adoc[leveloffset=+1]
+
+include::../slides/_docker-engine-lxc.adoc[]
+
+include::../slides/_docker-engine-libcontainer.adoc[leveloffset=+1]
+
+include::../slides/_docker-engine-containerd-runc.adoc[leveloffset=+1]
+
+include::../slides/_docker-demo-cgroups.adoc[]

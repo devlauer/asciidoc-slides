@@ -1,0 +1,8 @@
+== Docker Image
+
+[%step]
+* besteht aus Layern + Metadaten
+* ist unveränderlich
+* ist an Kernel/CPU-Architektur gebunden
+* Multi-Platform möglich
+* werden mithilfe von Dockerfiles erstellt
