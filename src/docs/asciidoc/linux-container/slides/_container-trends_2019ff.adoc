@@ -1,6 +1,7 @@
 ifndef::imagesdir[:imagesdir: ../images]
 == Trends
 
+[%step]
 * Rootless Container
 * Security bei Containern
 * MicroVMs + Container
