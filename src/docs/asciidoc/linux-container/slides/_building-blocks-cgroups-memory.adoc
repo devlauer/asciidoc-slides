@@ -1,0 +1,11 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+== Memory CGroup
+
+* Limitierung
+** Hauptspeicherverbrauch, Swap Verbrauch
+** Soft Limits und Hard Limits möglich
+* Accounting
+* Isolation
+** Speicher reservieren über Hard Limit
+

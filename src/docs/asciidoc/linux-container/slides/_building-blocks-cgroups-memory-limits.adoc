@@ -1,0 +1,18 @@
+== Memory CGroup: Limits
+* jeder Knoten kann eigene Limits haben
+* Limits sind optional
+* Soft Limits werden nicht erzwungen
+** relevant für Reclaiming bei Überlast
+** je höher über Soft Limit, desto wahrscheinlicher gekillt
+* Hard Limits triggern einen Knoten spezifischen OOM-Killer
+** wenn der Prozess über die Schwelle geht wird er gekillt
+* verschiedene Typen wie physical memory, kernel memory, total memory
+
+[.notes]
+--
+* der OOM-Killer lässt sich über einen OOM-Notifier umgehen
+* wenn Limit erreicht
+** Freeze der Gruppe
+** Kill Prozesse, Erhöhung Limit, Migration des Containers
+** Unfreeze der Gruppe
+--

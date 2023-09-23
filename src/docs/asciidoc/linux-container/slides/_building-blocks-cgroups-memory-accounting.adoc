@@ -1,0 +1,18 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+== Memory CGroup: Accounting
+
+* wie viel Speicher wird durch einen Knoten verwendet
+* Größeneinheit Page (meist 4KB)
+* viele Differenzierungen (Cache, RSS, Active, Inactive etc.)
+* alle Pages werden überwacht
+* jede Page gehört einem Knoten in der Hierarchie
+* Pages können über Gruppen geshared werden
+
+[.notes]
+--
+* gesharte Pages gehören dem ersten Nutzer bis dieser die Page freigibt
+* weitere Differenzierungen
+** File-Backed Pages (read/write/mmap block devices)
+** Anonymous Pages (stack, heap, anonymous mmap)
+--

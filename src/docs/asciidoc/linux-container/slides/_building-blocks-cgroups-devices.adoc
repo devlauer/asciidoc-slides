@@ -1,0 +1,12 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Devices CGroup
+* kontrolliert Read/Write/mknod Berechtigungen auf Device
+* typisch
+** allow: /dev/{tty,zero,random,null}...
+** deny: anything else
+** vielleicht:
+*** /dev/net/tun (network interface manipulation)
+*** /dev/fuse (filesystem in userspace)
+*** /dev/kvm (VMs in containers, yay inception!)
+*** /dev/dri (GPU)
+

@@ -5,7 +5,15 @@ include::../slides/_building-blocks-cgroups-general.adoc[]
 include::../slides/_building-blocks-cgroups-usage.adoc[]
 
 include::../slides/_building-blocks-cgroups-types.adoc[]
+include::../slides/_building-blocks-cgroups-memory.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-memory-accounting.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-memory-limits.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-cpu.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-blockio.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-devices.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-network.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-freezer.adoc[leveloffset=+1]
+include::../slides/_building-blocks-cgroups-pids.adoc[leveloffset=+1]
 
 include::../slides/_building-blocks-cgroups-demo-pids.adoc[]
-
 include::../slides/_building-blocks-cgroups-demo-freezer.adoc[leveloffset=+1]

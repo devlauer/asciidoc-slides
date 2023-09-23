@@ -1,0 +1,13 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Network CGroup (net_cls and net_prio)
+* automatisch Traffic Klasse oder Priorität setzen
+* funktioniert nur für ausgehenden Traffic
+* net_cls weist Traffic einer Klasse zu
+* net_prio weist Traffic eine Priorität zu
+
+[.notes]
+--
+* wenn net_cls Klasse nicht mit tc/iptables matcht, normaler Trafficflow
+* der Kernel markiert den Traffic der CGroup, danach kann dieser limitiert werden
+--
+

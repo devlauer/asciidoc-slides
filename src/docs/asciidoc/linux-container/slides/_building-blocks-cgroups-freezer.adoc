@@ -1,0 +1,10 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Freezer CGroup
+* erlaubt einen Knoten zu freeze/thaw
+* ähnliche Funktionalität zu SIGSTOP/SIGCONT
+** kann aber nicht durch Prozesse festgestellt werden
+* erschwert nicht ptrace/debugging
+* spezifische Use Cases
+** Cluster Batch Scheduling
+** Migration Prozess oder Container
+

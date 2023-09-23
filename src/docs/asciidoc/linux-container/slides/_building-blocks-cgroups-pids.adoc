@@ -1,0 +1,5 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== PIDs CGroup
+
+* limitiert die Anzahl der Prozesse in einem Knoten
+* verhindert zusätzlich gestartete Prozesse

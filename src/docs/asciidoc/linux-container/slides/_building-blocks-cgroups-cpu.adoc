@@ -1,0 +1,16 @@
+== CPU CGroup
+* Limitierung
+** über relative Gewichte (cpu.shares)
+* Accounting
+** cpustat.usage  User/System
+** Nutzung pro CPU
+* Isolation
+** cpuset.cpus
+** pinne eine spezifische CPU für einen Knoten
+** reserviere CPUs für spezifische Anwendungen
+
+[.notes]
+--
+* Throttling nicht direkt möglich, aber nicht so relevant, da Context-Switching << 1/HZ
+* anhand von Instruktionen, Clock Speed etc. nicht wirklich definierbar
+--

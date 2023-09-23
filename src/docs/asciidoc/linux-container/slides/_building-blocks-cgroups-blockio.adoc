@@ -1,0 +1,17 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Block I/O CGroup
+* Limitierung und Isolation
+** blkio.throttle.{read,write}.{iops,bps}.device
+** pro Block Device möglich
+* relative Gewichtung/Priorisierung
+* Accounting
+** Anzahl von IOs, Bytes, Service Time
+** pro Block Device möglich
+
+[.notes]
+--
+* keine perfekte Limitierung von I/O möglich
+* seit 3.8 Kernel auch Accounting von async I/O
+* die meisten Writes gehen über Page Cache, so dass man
+meint das Throttling nicht funktioniert
+--
