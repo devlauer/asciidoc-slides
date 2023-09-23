@@ -3,8 +3,8 @@
 
 <svg
    width="202.71774mm"
-   height="360.36252mm"
-   viewBox="0 0 202.71774 360.36252"
+   height="195.37752mm"
+   viewBox="0 0 202.71774 195.37752"
    version="1.1"
    id="svg1"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      inkscape:zoom="1"
      inkscape:cx="226"
-     inkscape:cy="863"
+     inkscape:cy="660"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -550,12 +550,5 @@
          id="tspan22"
          x="133.17459"
          y="206.40587">Kernel</tspan></text>
-    <rect
-       style="fill:none;stroke:none;stroke-width:0.698898"
-       id="rect903-8"
-       width="169.33333"
-       height="128.58749"
-       x="24.870836"
-       y="253.73543" />
   </g>
 </svg>

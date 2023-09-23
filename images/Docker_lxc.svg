@@ -3,8 +3,8 @@
 
 <svg
    width="202.71771mm"
-   height="348.45624mm"
-   viewBox="0 0 202.71771 348.45624"
+   height="195.90663mm"
+   viewBox="0 0 202.71771 195.90663"
    version="1.1"
    id="svg1"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -550,12 +550,5 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:1.065"
          x="158.20613"
          y="62.432514">Image</tspan></text>
-    <rect
-       style="fill:none;stroke:none;stroke-width:0.698898"
-       id="rect903"
-       width="169.33333"
-       height="128.58749"
-       x="23.283333"
-       y="241.82916" />
   </g>
 </svg>

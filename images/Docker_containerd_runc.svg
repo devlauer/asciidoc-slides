@@ -3,8 +3,8 @@
 
 <svg
    width="203.13884mm"
-   height="359.30417mm"
-   viewBox="0 0 203.13884 359.30417"
+   height="195.55794mm"
+   viewBox="0 0 203.13884 195.55794"
    version="1.1"
    id="svg1"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      inkscape:zoom="1"
      inkscape:cx="432"
-     inkscape:cy="690"
+     inkscape:cy="457"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -244,14 +244,14 @@
          x="86.137009"
          y="33.241005">Image Registry</tspan></text>
     <path
-       style="fill:none;stroke:#dbe3de;stroke-width:1.5461;stroke-dasharray:none;marker-start:url(#ConcaveTriangle-3)"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.54609165;stroke-dasharray:none;marker-start:url(#ConcaveTriangle-3)"
        d="m 92.458703,97.742056 c 0,-4.025413 0,-8.050823 0,-15.284092 0,-7.233269 0,-17.673976 0,-28.11489"
        id="path8-0"
        inkscape:path-effect="#path-effect8-4"
        inkscape:original-d="m 92.458703,97.742056 c 0,-4.025413 0,-8.050823 0,-12.076236 0,-10.441125 0,-20.881832 0,-31.322746"
        transform="matrix(0,-0.68883368,0.68883368,0,14.979876,191.52815)" />
     <path
-       style="fill:none;stroke:#dbe3de;stroke-width:1.5461;stroke-dasharray:none;marker-start:url(#ConcaveTriangle-3-9)"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.5461;stroke-dasharray:none;marker-start:url(#ConcaveTriangle-3-9)"
        d="m 92.458703,97.742056 c 0,-4.025413 0,-8.050823 0,-15.284092 0,-7.233269 0,-17.673976 0,-28.11489"
        id="path8-0-3"
        inkscape:path-effect="#path-effect8-4-6"
@@ -584,12 +584,5 @@
          id="tspan22"
          x="133.59563"
          y="206.62926">Kernel</tspan></text>
-    <rect
-       style="fill:none;stroke:none;stroke-width:0.698898"
-       id="rect903"
-       width="169.33333"
-       height="128.58749"
-       x="21.695835"
-       y="252.67708" />
   </g>
 </svg>
