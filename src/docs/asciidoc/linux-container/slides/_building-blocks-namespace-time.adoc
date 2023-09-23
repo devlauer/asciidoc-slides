@@ -1,5 +1,4 @@
-
-=== Time Namespace
+== Time Namespace
 
 * Virtualisiert/Isoliert
 ** CLOCK_MONOTONIC

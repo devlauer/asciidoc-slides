@@ -1,4 +1,4 @@
-=== Use Cases
+== Use Cases
 
 [%step]
 * Continuous Integration / Continuous Deployment

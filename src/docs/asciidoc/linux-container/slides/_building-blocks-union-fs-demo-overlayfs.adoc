@@ -1,5 +1,5 @@
 [%notitle]
-=== Union Filesystem - Demo OverlayFS
+== Union Filesystem - Demo OverlayFS
 
 DEMO - OverlayFS
 
