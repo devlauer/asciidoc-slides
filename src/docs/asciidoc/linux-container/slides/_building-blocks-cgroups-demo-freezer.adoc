@@ -1,7 +1,7 @@
 [%notitle]
 == CGroups - Demo
 
-* Demo - Cgroup Freezer
+Demo - Cgroup Freezer
 
 [.notes]
 --
