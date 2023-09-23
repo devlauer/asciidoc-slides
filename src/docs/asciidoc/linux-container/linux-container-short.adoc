@@ -15,7 +15,7 @@ include::./slides/_building-blocks-namespaces-general.adoc[]
 
 include::./slides/_building-blocks-namespace-types.adoc[]
 
-include::./slides/_building-blocks-namespace-multiprocess-example.adoc[]
+include::./slides/_building-blocks-namespace-multiprocess-example.adoc[leveloffset=+1]
 
 include::./slides/_building-blocks-namespace-demo-net.adoc[]
 
@@ -46,6 +46,14 @@ include::slides/_container-trends_2019ff.adoc[]
 include::chapter/_1900_questions.adoc[]
 
 include::slides/_building-blocks-demo-container-with-chroot-and-cgroups.adoc[]
+
+[%notitle]
+== Danke
+
+Danke für die Aufmerksamkeit!
+
+[%notitle]
+== Empty Page
 
 include::chapter/_2100_overview_container_engines_and_runtimes.adoc[]
 
