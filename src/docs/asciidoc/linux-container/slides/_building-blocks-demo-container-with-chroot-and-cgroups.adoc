@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [%notitle]
-=== Demo - build your own container
+== Demo - build your own container
 
 DEMO - build your own container
 
