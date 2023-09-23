@@ -20,6 +20,7 @@ fs.rmSync(destDir, {recursive: true, force: true});
 
 var options = {safe: 'safe', backend: 'revealjs', to_dir: destDir, imagesdir: srcDir.concat('images/'), mkdirs: true}
 asciidoctor.convertFile(srcDir.concat('linux-container.adoc'), options)
+asciidoctor.convertFile(srcDir.concat('linux-container-short.adoc'), options)
 
 copyDir(srcDir.concat('images/'), destDir.concat('images/'))
 copyDir(srcDir.concat('css/'), destDir.concat('css/'))

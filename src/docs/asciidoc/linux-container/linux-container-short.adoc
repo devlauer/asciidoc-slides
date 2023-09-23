@@ -1,0 +1,51 @@
+= Linux Container
+
+:example-caption!:
+:revealjs_theme: black
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js
+ifndef::imagesdir[:imagesdir: ./images]
+:customcss: ./css/custom.css
+:title-slide-background-image: https://images.pexels.com/photos/14734004/pexels-photo-14734004.jpeg
+
+include::./slides/_container-comparison-vm.adoc[]
+
+include::./slides/_container-os-vs-app.adoc[]
+
+include::./slides/_building-blocks-namespaces-general.adoc[]
+
+include::./slides/_building-blocks-namespace-types.adoc[]
+
+include::./slides/_building-blocks-namespace-multiprocess-example.adoc[]
+
+include::./slides/_building-blocks-namespace-demo-net.adoc[]
+
+include::slides/_building-blocks-cgroups-general.adoc[]
+
+include::slides/_building-blocks-cgroups-types.adoc[]
+
+include::slides/_building-blocks-cgroups-demo-freezer.adoc[]
+
+include::slides/_building-blocks-union-fs-general.adoc[]
+
+include::slides/_building-blocks-union-fs-demo-overlayfs.adoc[]
+
+include::slides/_docker-image-container-layers.adoc[]
+
+include::slides/_building-blocks-other.adoc[]
+
+include::slides/_docker-engine-containerd-runc.adoc[]
+
+include::slides/_oci-general.adoc[]
+
+include::slides/_kubernetes-overview.adoc[]
+
+include::slides/_kubernetes-pod-vs.container.adoc[]
+
+include::slides/_container-trends_2019ff.adoc[]
+
+include::chapter/_1900_questions.adoc[]
+
+include::slides/_building-blocks-demo-container-with-chroot-and-cgroups.adoc[]
+
+include::chapter/_2100_overview_container_engines_and_runtimes.adoc[]
+
