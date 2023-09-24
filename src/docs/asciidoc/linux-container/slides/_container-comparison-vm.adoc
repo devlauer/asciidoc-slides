@@ -34,5 +34,6 @@ image::Container.svg[]
 * Container sind
 ** nur eine Gruppe von Prozessen
 ** isoliert von anderen Prozessgruppen
-**
+** können das gleiche wie normale Prozesse nur potentiell limitiert
+
 --
