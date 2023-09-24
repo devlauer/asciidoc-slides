@@ -1,0 +1,11 @@
+ifndef::imagesdir[:imagesdir: ../images]
+== Mount Namespace - Beispiel
+
+[%step]
+--
+image::net_namespace_example.svg[role=stretch]
+--
+
+[.notes]
+--
+--

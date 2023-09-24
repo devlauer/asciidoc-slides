@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.914906"
-     inkscape:cx="244.28739"
+     inkscape:cx="228.98527"
      inkscape:cy="560.71334"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
@@ -136,14 +136,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#ffff00;stroke-width:1.065;stroke-opacity:1"
        id="rect8856"
        width="180.74489"
        height="166.86368"
        x="15.037975"
        y="44.824734" />
     <rect
-       style="fill:none;stroke:#ffffff;stroke-width:0.578849;stroke-opacity:1"
+       style="fill:none;stroke:#00ff00;stroke-width:0.578849;stroke-opacity:1"
        id="rect8856-0"
        width="103.14925"
        height="86.376122"
@@ -151,63 +151,63 @@
        y="119.04855" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
        x="54.774632"
        y="59.573513"
        id="text8964"><tspan
          sodipodi:role="line"
          id="tspan8962"
-         style="fill:#ffffff;stroke-width:0.264583"
+         style="fill:#ffff00;stroke-width:0.264583;stroke:#ffff00"
          x="54.774632"
          y="59.573513">root PID namespace</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="29.306746"
        y="130.62021"
        id="text8964-3"><tspan
          sodipodi:role="line"
          id="tspan8962-4"
-         style="fill:#ffffff;stroke-width:0.264583"
+         style="fill:#00ff00;stroke-width:0.264583"
          x="29.306746"
          y="130.62021">PID namespace x</tspan></text>
     <rect
-       style="fill:#e5ff80;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#ffff00;stroke-width:1.065;stroke-opacity:1"
        id="rect10579"
        width="35.281403"
        height="16.194742"
        x="87.769714"
        y="80.973709" />
     <rect
-       style="fill:#e5ff80;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#ffff00;stroke-width:1.065;stroke-opacity:1"
        id="rect10579-0"
        width="35.281403"
        height="16.194742"
        x="149.51216"
        y="139.67964" />
     <rect
-       style="fill:#e5ff80;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#ffff00;stroke-width:1.065;stroke-opacity:1"
        id="rect10579-7"
        width="35.281403"
        height="16.194742"
        x="149.51216"
        y="174.38268" />
     <rect
-       style="fill:#ffccaa;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#00ff00;stroke-width:1.065;stroke-opacity:1"
        id="rect10579-6"
        width="35.281403"
        height="16.194742"
        x="58.349716"
        y="139.67964" />
     <rect
-       style="fill:#ffccaa;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#00ff00;stroke-width:1.065;stroke-opacity:1"
        id="rect10579-1"
        width="35.281403"
        height="16.194742"
        x="29.06378"
        y="174.38268" />
     <rect
-       style="fill:#ffccaa;stroke:#ffffff;stroke-width:1.065;stroke-opacity:1"
+       style="fill:none;stroke:#00ff00;stroke-width:1.065;stroke-opacity:1"
        id="rect10579-9"
        width="35.281403"
        height="16.194742"
@@ -215,18 +215,18 @@
        y="174.38268" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
        x="99.235397"
        y="90.538635"
        id="text10730"><tspan
          sodipodi:role="line"
          id="tspan10728"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583;fill:#ffff00;stroke:#ffff00"
          x="99.235397"
          y="90.538635">pid 1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
        x="160.52629"
        y="149.24457"
        id="text10730-2"><tspan
@@ -236,7 +236,7 @@
          y="149.24457">pid 3</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
        x="160.49808"
        y="183.9476"
        id="text10730-2-4"><tspan
@@ -246,52 +246,76 @@
          y="183.9476">pid 6</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:#00ff00;stroke-width:0.264583"
        x="60.341198"
        y="149.24457"
        id="text10730-6"><tspan
          sodipodi:role="line"
-         id="tspan10806"
-         x="60.341198"
-         y="149.24457">pid 1 (pid 2)</tspan></text>
+         id="tspan399">pid 1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
+       x="74.897133"
+       y="149.24457"
+       id="text10730-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan428"
+         x="74.897133"
+         y="149.24457">(pid 2)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
+       x="45.837994"
+       y="183.9476"
+       id="text10730-6-3-7"><tspan
+         sodipodi:role="line"
+         id="tspan457"
+         x="45.837994"
+         y="183.9476">(pid 4)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
+       x="97.412567"
+       y="183.9476"
+       id="text10730-6-3-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan486"
+         x="97.412567"
+         y="183.9476">(pid 5)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:#00ff00;stroke-width:0.264583"
        x="31.055273"
        y="183.9476"
        id="text10730-6-4"><tspan
          sodipodi:role="line"
-         id="tspan10841"
-         x="31.055273"
-         y="183.9476">pid 2 (pid 4)</tspan></text>
+         id="tspan490">pid 2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:#00ff00;stroke-width:0.264583"
        x="82.820602"
        y="183.9476"
        id="text10730-6-4-4"><tspan
          sodipodi:role="line"
-         id="tspan10899"
-         x="82.820602"
-         y="183.9476">pid 3 (pid 5)</tspan></text>
+         id="tspan488">pid 3</tspan></text>
     <path
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.747;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       style="fill:#ffff00;stroke:#ffff00;stroke-width:0.747;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
        d="M 105.53118,97.551807 81.86123,117.14669"
        id="path11023" />
     <path
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.700896;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1)"
+       style="fill:#00ff00;stroke:#00ff00;stroke-width:0.700896;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1)"
        d="M 76.224214,156.45665 50.120301,172.09897"
        id="path11023-5" />
     <path
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.673212;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1-5)"
+       style="fill:#00ff00;stroke:#00ff00;stroke-width:0.673212;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1-5)"
        d="m 77.104846,155.846 23.296724,16.16995"
        id="path11023-5-6" />
     <path
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.747;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1-5-8)"
+       style="fill:#ffff00;stroke:#ffff00;stroke-width:0.747;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1-5-8)"
        d="M 105.95337,97.655708 163.80053,135.222"
        id="path11023-5-6-0" />
     <path
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.581949;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1-5-6)"
+       style="fill:#ffff00;stroke:#ffff00;stroke-width:0.581949;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1-5-6)"
        d="m 167.95718,156.80992 -0.41221,15.46389"
        id="path11023-5-6-1" />
   </g>

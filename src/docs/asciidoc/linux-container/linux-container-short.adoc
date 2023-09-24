@@ -13,9 +13,15 @@ include::./slides/_container-os-vs-app.adoc[]
 
 include::./slides/_building-blocks-namespaces-general.adoc[]
 
+include::./slides/_building-blocks-namespace-types.adoc[]
+
+include::./slides/_building-blocks-namespace-mount-example.adoc[leveloffset=+1]
+
 include::./slides/_building-blocks-namespace-pid-example.adoc[leveloffset=+1]
 
-include::./slides/_building-blocks-namespace-types.adoc[]
+include::./slides/_building-blocks-namespace-net-example.adoc[leveloffset=+1]
+
+include::./slides/_building-blocks-namespace-user-example.adoc[leveloffset=+1]
 
 include::./slides/_building-blocks-namespace-multiprocess-example.adoc[leveloffset=+1]
 
