@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.64693624"
-     inkscape:cx="1041.8337"
+     inkscape:cx="1042.6066"
      inkscape:cy="445.17525"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
@@ -41,14 +41,14 @@
      id="layer1"
      transform="translate(29.630063,-49.046014)">
     <rect
-       style="fill:none;stroke:#ff00ff;stroke-width:0.840709;stroke-dasharray:none"
+       style="fill:none;stroke:#ffff00;stroke-width:0.840709;stroke-dasharray:none"
        id="rect460"
        width="233.2021"
        height="109.71718"
        x="-3.9608312"
        y="130.51337" />
     <rect
-       style="fill:none;stroke:#ff00ff;stroke-width:0.499205;stroke-dasharray:none"
+       style="fill:none;stroke:#00ff00;stroke-width:0.499205;stroke-dasharray:none"
        id="rect460-3"
        width="233.54359"
        height="38.6283"
@@ -173,45 +173,45 @@
          y="121.73238">docker build -t apache .</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="243.06796"
        y="187.8802"
        id="text1297"><tspan
          sodipodi:role="line"
          id="tspan1295"
-         style="fill:#ffffff;stroke-width:0.264583"
+         style="fill:#ffff00;stroke-width:0.264583"
          x="243.06796"
          y="187.8802">Image Layers</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="239.1416"
        y="90.110474"
        id="text1297-6"><tspan
          sodipodi:role="line"
          id="tspan1295-6"
-         style="fill:#ffffff;stroke-width:0.264583"
+         style="fill:#00ff00;stroke-width:0.264583"
          x="239.1416"
          y="90.110474">Container Layer</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:0.264583"
        x="52.435154"
        y="141.99318"
        id="text1328"><tspan
          sodipodi:role="line"
          id="tspan1326"
-         style="fill:#ff00ff;stroke-width:0.264583"
+         style="fill:#ffff00;stroke-width:0.264583;stroke:#ffff00"
          x="52.435154"
          y="141.99318">Read only</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#00ff00;fill-opacity:1;stroke:#00ff00;stroke-width:0.264583"
        x="49.493114"
        y="78.809105"
        id="text1328-8"><tspan
          sodipodi:role="line"
-         style="fill:#ff00ff;stroke-width:0.264583"
+         style="fill:#00ff00;stroke-width:0.264583;stroke:#00ff00"
          x="49.493114"
          y="78.809105"
          id="tspan2109">Read Write</tspan></text>
