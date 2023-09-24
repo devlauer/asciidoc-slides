@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="205.75899mm"
+   height="140.32234mm"
+   viewBox="0 0 205.75899 140.32234"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="mount_namespace_example.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2938725"
+     inkscape:cx="330.78994"
+     inkscape:cy="226.45199"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.739332,-40.774377)">
+    <g
+       id="g1868"
+       transform="translate(0.76507115,2.3916994)">
+      <rect
+         style="fill:none;stroke:#00ff00;stroke-width:0.747001"
+         id="rect788"
+         width="70.851997"
+         height="27.473223"
+         x="25.470606"
+         y="131.48691" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="26.596159"
+         y="146.89569"
+         id="text974"><tspan
+           sodipodi:role="line"
+           id="tspan972"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;stroke-width:0.264583"
+           x="26.596159"
+           y="146.89569">Mount Namespace 1</tspan></text>
+      <rect
+         style="fill:none;stroke:#00ff00;stroke-width:0.747001"
+         id="rect1057"
+         width="16.194742"
+         height="13.881207"
+         x="38.050461"
+         y="117.41189" />
+      <rect
+         style="fill:none;stroke:#00ff00;stroke-width:0.747001"
+         id="rect1057-0"
+         width="16.194742"
+         height="13.881207"
+         x="67.548019"
+         y="117.46111" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="42.418972"
+         y="126.87134"
+         id="text1105"><tspan
+           sodipodi:role="line"
+           id="tspan1103"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;stroke-width:0.264583"
+           x="42.418972"
+           y="126.87134">P1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="71.33445"
+         y="126.95582"
+         id="text1105-3"><tspan
+           sodipodi:role="line"
+           id="tspan1136"
+           x="71.33445"
+           y="126.95582">P2</tspan></text>
+      <g
+         id="g1513">
+        <rect
+           style="fill:none;stroke:#00ffff;stroke-width:0.747001"
+           id="rect788-3"
+           width="70.851997"
+           height="27.473223"
+           x="113.3849"
+           y="131.43768" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="114.36213"
+           y="146.88174"
+           id="text974-9"><tspan
+             sodipodi:role="line"
+             id="tspan1003"
+             x="114.36213"
+             y="146.88174">Mount Namespace 2</tspan></text>
+        <rect
+           style="fill:none;stroke:#00ffff;stroke-width:0.747001"
+           id="rect1057-0-6"
+           width="16.194742"
+           height="13.881207"
+           x="140.71338"
+           y="117.41189" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="144.51743"
+           y="126.87133"
+           id="text1105-3-4"><tspan
+             sodipodi:role="line"
+             id="tspan1165"
+             x="144.51743"
+             y="126.87133">P3</tspan></text>
+      </g>
+      <g
+         id="g1494"
+         transform="translate(13.447415)">
+        <g
+           id="g1419"
+           transform="translate(0,-0.86756516)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="0.17938532"
+             y="71.31839"
+             id="text1105-9"><tspan
+               sodipodi:role="line"
+               id="tspan1318"
+               x="0.17938532"
+               y="71.31839">/proc/p1/mounts</tspan><tspan
+               sodipodi:role="line"
+               id="tspan1320"
+               x="0.17938532"
+               y="78.37394"></tspan><tspan
+               sodipodi:role="line"
+               id="tspan1322"
+               x="0.17938532"
+               y="85.429489">/     /dev/sda1</tspan><tspan
+               sodipodi:role="line"
+               id="tspan1324"
+               x="0.17938532"
+               y="92.485039">/home /dev/sda2</tspan></text>
+          <rect
+             style="fill:none;stroke:#00ff00;stroke-width:0.885824"
+             id="rect1238"
+             width="57.121159"
+             height="42.083183"
+             x="-2.9453838"
+             y="59.064541" />
+        </g>
+        <g
+           id="g1471"
+           transform="translate(-4.048694,-1.1567589)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="70.019218"
+             y="71.607582"
+             id="text1105-9-5"><tspan
+               sodipodi:role="line"
+               id="tspan1441"
+               x="70.019218"
+               y="71.607582">/proc/p2/mounts</tspan><tspan
+               sodipodi:role="line"
+               id="tspan1443"
+               x="70.019218"
+               y="78.663132"></tspan><tspan
+               sodipodi:role="line"
+               id="tspan1445"
+               x="70.019218"
+               y="85.718681">/     /dev/sda1</tspan><tspan
+               sodipodi:role="line"
+               id="tspan1447"
+               x="70.019218"
+               y="92.774231">/home /dev/sda2</tspan></text>
+          <rect
+             style="fill:none;stroke:#00ff00;stroke-width:0.874743"
+             id="rect1238-2"
+             width="55.686279"
+             height="42.094265"
+             x="67.611893"
+             y="59.348194" />
+        </g>
+        <g
+           id="g1463">
+          <rect
+             style="fill:none;stroke:#00ffff;stroke-width:0.885824"
+             id="rect1238-25"
+             width="57.121159"
+             height="42.083183"
+             x="128.6369"
+             y="58.196976" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="131.76167"
+             y="70.450821"
+             id="text1105-9-59"><tspan
+               sodipodi:role="line"
+               id="tspan1449"
+               x="131.76167"
+               y="70.450821">/proc/p3/mounts</tspan><tspan
+               sodipodi:role="line"
+               id="tspan1451"
+               x="131.76167"
+               y="77.506371"></tspan><tspan
+               sodipodi:role="line"
+               id="tspan1453"
+               x="131.76167"
+               y="84.56192">/     /dev/sda3</tspan><tspan
+               sodipodi:role="line"
+               id="tspan1455"
+               x="131.76167"
+               y="91.61747">/home /dev/sda4</tspan></text>
+        </g>
+      </g>
+      <path
+         style="fill:#00ff00;stroke:#00ff00;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 46.147832,100.06037 v 17.6407"
+         id="path1578" />
+      <path
+         style="fill:#00ffff;stroke:#00ffff;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 148.8109,100.17255 v 17.6407"
+         id="path1578-8" />
+      <path
+         style="fill:#00ff00;stroke:#00ff00;stroke-width:1.14621;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 86.588161,100.42976 76.311537,117.36677"
+         id="path1578-6" />
+    </g>
+    <rect
+       style="fill:none;stroke:#ffff00;stroke-width:1.065;stroke-dasharray:none"
+       id="rect1721"
+       width="204.69398"
+       height="139.25734"
+       x="3.271832"
+       y="41.306877" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="4.9077473"
+       y="51.531353"
+       id="text1872"><tspan
+         sodipodi:role="line"
+         id="tspan1870"
+         style="fill:#ffff00;stroke-width:0.264583"
+         x="4.9077473"
+         y="51.531353">Host</tspan></text>
+  </g>
+</svg>
