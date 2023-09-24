@@ -6,6 +6,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 * Security bei Containern
 * MicroVMs + Container
 * KI in Containern
+* Distroless Images
 * WebAssembly (Wasm Edge Runtime in CNCF)
 
 [.notes]
