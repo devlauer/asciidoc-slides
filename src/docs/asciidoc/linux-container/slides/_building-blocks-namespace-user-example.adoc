@@ -1,5 +1,5 @@
 ifndef::imagesdir[:imagesdir: ../images]
-== Mount Namespace - Beispiel
+== User Namespace - Beispiel
 
 [%step]
 --
