@@ -2,9 +2,10 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Übersicht Kubernetes
 :figure-caption!:
-
+[%step]
+--
 image::https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png[role=stretch]
 [.small.text-center]
---
 https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png
+
 --
