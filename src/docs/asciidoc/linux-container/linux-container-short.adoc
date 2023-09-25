@@ -7,31 +7,31 @@ ifndef::imagesdir[:imagesdir: ./images]
 :customcss: ./css/custom.css
 :title-slide-background-image: https://images.pexels.com/photos/14734004/pexels-photo-14734004.jpeg
 
-include::./slides/_container-comparison-vm.adoc[]
+include::slides/_container-comparison-vm.adoc[]
 
-include::./slides/_container-os-vs-app.adoc[]
+include::slides/_building-blocks-namespaces-general.adoc[]
 
-include::./slides/_building-blocks-namespaces-general.adoc[]
+include::slides/_building-blocks-namespace-mount-example.adoc[]
 
-include::./slides/_building-blocks-namespace-types.adoc[]
+include::slides/_building-blocks-namespace-pid-example.adoc[leveloffset=+1]
 
-include::./slides/_building-blocks-namespace-mount-example.adoc[leveloffset=+1]
+include::slides/_building-blocks-namespace-net-example.adoc[leveloffset=+1]
 
-include::./slides/_building-blocks-namespace-pid-example.adoc[leveloffset=+1]
+include::slides/_building-blocks-namespace-user-example.adoc[leveloffset=+1]
 
-include::./slides/_building-blocks-namespace-net-example.adoc[leveloffset=+1]
+include::slides/_building-blocks-namespace-types.adoc[leveloffset=+1]
 
-include::./slides/_building-blocks-namespace-user-example.adoc[leveloffset=+1]
+include::slides/_building-blocks-namespace-multiprocess-example.adoc[leveloffset=+1]
 
-include::./slides/_building-blocks-namespace-multiprocess-example.adoc[leveloffset=+1]
-
-include::./slides/_building-blocks-namespace-demo-net.adoc[]
+include::slides/_building-blocks-namespace-demo-net.adoc[]
 
 include::slides/_building-blocks-cgroups-general.adoc[]
 
 include::slides/_building-blocks-cgroups-types.adoc[]
 
 include::slides/_building-blocks-cgroups-demo-freezer.adoc[]
+
+include::slides/_container-os-vs-app.adoc[]
 
 include::slides/_building-blocks-union-fs-general.adoc[]
 
